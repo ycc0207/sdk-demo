@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_gesture_detector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_gesture_detector"
+            android:onClick="onGestureListener" />
+
+        <Button
+            android:id="@+id/btn_gesture_bearing_locked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_gesture_bearing_locked"
+            android:onClick="onBearingLocked" />
+
+        <Button
+            android:id="@+id/btn_gesture_zoom_locked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_gesture_zoom_locked"
+            android:onClick="onZoomLocked" />
+
+        <Button
+            android:id="@+id/btn_gesture_tilt_locked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_gesture_tilt_locked"
+            android:onClick="onTiltLocked" />
+
+        <Button
+            android:id="@+id/btn_gesture_scroll_locked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_gesture_scroll_locked"
+            android:onClick="onScrollLocked" />
+
+    </LinearLayout>
+
+</RelativeLayout>

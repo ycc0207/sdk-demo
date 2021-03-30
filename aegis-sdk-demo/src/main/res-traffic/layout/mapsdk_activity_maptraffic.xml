@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/map_debug_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/mapsdk_btn_background"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/cb_map_debug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/mapsdk_btn_check"
+            android:text="@string/mapsdk_map_debug"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/map_debug_layout"
+        android:background="@drawable/mapsdk_btn_background"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/map_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:textColor="@android:color/white"
+            android:text="白天模式"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapsdk_btn_background"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/traffic_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/mapsdk_btn_check"
+            android:text="路况"
+            android:checked="true"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

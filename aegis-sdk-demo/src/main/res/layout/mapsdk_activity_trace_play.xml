@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_trace_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapsdk_btn_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:text="开始回放"
+        android:onClick="onTracePlayStart"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_trace_pause_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapsdk_btn_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:text="暂停/回放"
+        android:visibility="gone"
+        android:onClick="onTracePlayPause"
+        android:layout_marginTop="70dp" />
+
+</RelativeLayout>

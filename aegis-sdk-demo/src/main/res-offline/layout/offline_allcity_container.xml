@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:id="@+id/offline_allcity_container">
+    <include
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/offline_search_view_container"/>
+    <ExpandableListView
+        android:id="@+id/province_download_list"
+        android:layout_below="@id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <ListView
+        android:id="@+id/search_city_lv"
+        android:layout_below="@id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/no_search_result_tv"
+        android:layout_below="@id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="抱歉,暂时没有找到相关城市"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</RelativeLayout>

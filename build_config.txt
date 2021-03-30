@@ -1,0 +1,14 @@
+1,2,3,4,
+
+#默认1,2,3,4, 适配地图app
+
+# type = 1 location
+# type = 2 navisdk
+# type = 3 offline
+# type = 4 search
+# type = 5 thirdnavi
+# type = 7 ukey
+# type = 8 powergrid
+# type = 9 route
+
+# 请在第一行填写需要打包的模块对应的数字，中间用","隔开，不要换行,最后也要保留一个","

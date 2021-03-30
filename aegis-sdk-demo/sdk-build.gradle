@@ -1,0 +1,388 @@
+import java.nio.file.Files
+
+// ----------------------release拷贝jar到map模块------------------------
+// 1 location
+// 2 navisdk
+// 3 offline
+// 4 search
+// 5 thirdnavi
+// 7 key
+// 8 geoconv
+
+def list = []
+
+task readConfig{
+    File file = new File(getRootDir().getPath() + "/build_config.txt")
+    if(file.exists()){
+        BufferedReader br = new BufferedReader(new FileReader(file))
+        String str = br.readLine()
+        String[] splits = str.split(",");
+        for(String item:splits){
+            list.add(Integer.parseInt(item));
+        }
+    }else{
+        list.addAll([1,2,3,4])
+    }
+}
+
+task copyAllData{
+    dependsOn ':aegis-module-common:assembleRelease'
+    dependsOn ':aegis-module-service:assembleRelease'
+    dependsOn ':aegis-module-auth:assembleRelease'
+    dependsOn ':aegis-module-location:assembleRelease'
+    dependsOn ':aegis-module-offline:assembleRelease'
+    dependsOn ':aegis-module-data:assembleRelease'
+    dependsOn ':aegis-module-log:assembleRelease'
+    dependsOn ':aegis-module-navi3rd:assembleRelease'
+    dependsOn ':aegis-plugin-powergrid:assembleRelease'
+    dependsOn ':aegis-plugin-route:assembleRelease'
+    dependsOn(readConfig)
+}
+
+copyAllData.doLast {
+    File fileDir = new File(getRootDir().getPath() + "/aegis-sdk-map/libs");
+    if(!fileDir.exists()){ //如果文件夹不存在
+        fileDir.mkdir(); //创建文件夹
+    }
+
+    if(list.contains(1) || list.contains(2)){
+        File file1Amap = new File(getRootDir().getPath() + "/aegis-module-location/libs/Base_Location_V3.6.1_20171012_new.jar");
+        File file2Amap = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/Base_Location_V3.6.1_20171012_new.jar");
+        Files.copy(file1Amap.toPath(), file2Amap.toPath());
+
+        File file1location = new File(getRootDir().getPath() + "/aegis-module-location/build/intermediates/bundles/release/classes.jar");
+        File file2location = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/location.jar");
+        Files.copy(file1location.toPath(), file2location.toPath())
+    }
+
+    if(list.contains(4)){
+        File file1service = new File(getRootDir().getPath() + "/aegis-module-service/build/intermediates/bundles/release/classes.jar");
+        File file2service = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/service.jar");
+        Files.copy(file1service.toPath(), file2service.toPath());
+    }
+
+
+    if(list.contains(3)){
+        File file1offline = new File(getRootDir().getPath() + "/aegis-module-offline/build/intermediates/bundles/release/classes.jar");
+        File file2offline = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/offline.jar");
+        Files.copy(file1offline.toPath(), file2offline.toPath());
+    }
+
+    if(list.contains(5)){
+        File file1pluginNavi = new File(getRootDir().getPath() + "/aegis-module-navi3rd/build/intermediates/bundles/release/classes.jar");
+        File file2pluginNavi = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/pluginNavi.jar");
+        Files.copy(file1pluginNavi.toPath(), file2pluginNavi.toPath());
+    }
+
+    if(list.contains(8)){
+        File file1conv = new File(getRootDir().getPath() + "/aegis-plugin-powergrid/build/intermediates/bundles/release/classes.jar");
+        File file2conv = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/powergrid.jar");
+        Files.copy(file1conv.toPath(), file2conv.toPath());
+    }
+
+    if(list.contains(9)){
+        File file1route = new File(getRootDir().getPath() + "/aegis-plugin-route/build/intermediates/bundles/release/classes.jar");
+        File file2route = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/route.jar");
+        Files.copy(file1route.toPath(), file2route.toPath());
+    }
+
+
+    File file1auth = new File(getRootDir().getPath() + "/aegis-module-auth/build/intermediates/bundles/release/classes.jar");
+    File file2auth = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/auth.jar");
+    Files.copy(file1auth.toPath(), file2auth.toPath());
+
+    File file1common = new File(getRootDir().getPath() + "/aegis-module-common/build/intermediates/bundles/release/classes.jar");
+    File file2common = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/common.jar");
+    Files.copy(file1common.toPath(), file2common.toPath());
+
+    File file1data= new File(getRootDir().getPath() + "/aegis-module-data/build/intermediates/bundles/release/classes.jar");
+    File file2data = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/data.jar");
+    Files.copy(file1data.toPath(), file2data.toPath());
+
+    File file1log= new File(getRootDir().getPath() + "/aegis-module-log/build/intermediates/bundles/release/classes.jar");
+    File file2log = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/log.jar");
+    Files.copy(file1log.toPath(), file2log.toPath());
+    //-----------------------------------------备份map的build.gradle
+
+    File fileBackDir = new File(getRootDir().getPath() + "/aegis-sdk-map/buildFlie/back");
+    if(!fileBackDir.exists()){ //如果文件夹不存在
+        fileBackDir.mkdir(); //创建文件夹
+    }
+
+    File file1backMap = new File(getRootDir().getPath() + "/aegis-sdk-map/build.gradle");
+    File file2backMap = new File(getRootDir().getPath() + "/aegis-sdk-map/buildFlie/back/build.gradle");
+    Files.copy(file1backMap.toPath(), file2backMap.toPath());
+
+    //---------------------------------------拷贝map编译的build.gradle
+
+    File file1map = new File(getRootDir().getPath() + "/aegis-sdk-map/buildFlie/sdk/build.gradle");
+    File file2map = new File(getRootDir().getPath() + "/aegis-sdk-map/build.gradle");
+
+    Files.delete(file2map.toPath())
+    Files.copy(file1map.toPath(), file2map.toPath());
+}
+
+task copySoAll{
+
+}
+
+copySoAll.doLast{
+    //------------------------------------so arm64-v8a-------common--net-------
+
+    File file1v8a = new File(getRootDir().getPath() + "/aegis-module-auth/src/main/jniLibs/arm64-v8a/libAegisCommon.so");
+    File file2v8a = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/arm64-v8a/libAegisCommon.so");
+    Files.copy(file1v8a.toPath(), file2v8a.toPath());
+
+    File file3v8a = new File(getRootDir().getPath() + "/aegis-module-auth/src/main/jniLibs/arm64-v8a/libAegisNet.so");
+    File file4v8a = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/arm64-v8a/libAegisNet.so");
+    Files.copy(file3v8a.toPath(), file4v8a.toPath());
+
+    if(list.contains(1) || list.contains(2)){
+        File file5v8a = new File(getRootDir().getPath() + "/aegis-module-location/src/main/jniLibs/arm64-v8a/libAegisLoc.so");
+        File file6v8a = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/arm64-v8a/libAegisLoc.so");
+        Files.copy(file5v8a.toPath(), file6v8a.toPath());
+    }
+
+    if(list.contains(5)){
+        File file9v8a = new File(getRootDir().getPath() + "/aegis-module-navi3rd/src/main/jniLibs/arm64-v8a/libNavi3rdPlugin.so");
+        File file10v8a = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/arm64-v8a/libNavi3rdPlugin.so");
+        Files.copy(file9v8a.toPath(), file10v8a.toPath());
+    }
+
+    //----------------------------------------armeabi-v7a-------common--net-------
+
+    File file1v7a = new File(getRootDir().getPath() + "/aegis-module-auth/src/main/jniLibs/armeabi-v7a/libAegisCommon.so");
+    File file2v7a = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libAegisCommon.so");
+    Files.copy(file1v7a.toPath(), file2v7a.toPath());
+
+    File file3v7a = new File(getRootDir().getPath() + "/aegis-module-auth/src/main/jniLibs/armeabi-v7a/libAegisNet.so");
+    File file4v7a = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libAegisNet.so");
+    Files.copy(file3v7a.toPath(), file4v7a.toPath());
+
+    if(list.contains(1)  || list.contains(2)){
+        File file7v8a = new File(getRootDir().getPath() + "/aegis-module-location/src/main/jniLibs/armeabi-v7a/libAegisLoc.so");
+        File file8v8a = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libAegisLoc.so");
+        Files.copy(file7v8a.toPath(), file8v8a.toPath());
+    }
+
+    if(list.contains(5)){
+        File file11v8a = new File(getRootDir().getPath() + "/aegis-module-navi3rd/src/main/jniLibs/armeabi-v7a/libNavi3rdPlugin.so");
+        File file12v8a = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libNavi3rdPlugin.so");
+        Files.copy(file11v8a.toPath(), file12v8a.toPath());
+    }
+
+    //----------------------------------------armeabi-----------------------
+
+    File file1v5 = new File(getRootDir().getPath() + "/aegis-module-auth/src/main/jniLibs/armeabi/libAegisCommon.so");
+    File file2v5 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi/libAegisCommon.so");
+    Files.copy(file1v5.toPath(), file2v5.toPath());
+
+    File file3v5 = new File(getRootDir().getPath() + "/aegis-module-auth/src/main/jniLibs/armeabi/libAegisNet.so");
+    File file4v5 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi/libAegisNet.so");
+    Files.copy(file3v5.toPath(), file4v5.toPath());
+
+    if(list.contains(1) || list.contains(2)){
+        File file7v5 = new File(getRootDir().getPath() + "/aegis-module-location/src/main/jniLibs/armeabi/libAegisLoc.so");
+        File file8v5 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi/libAegisLoc.so");
+        Files.copy(file7v5.toPath(), file8v5.toPath());
+    }
+
+    if(list.contains(5)){
+        File file11v5 = new File(getRootDir().getPath() + "/aegis-module-navi3rd/src/main/jniLibs/armeabi/libNavi3rdPlugin.so");
+        File file12v5 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi/libNavi3rdPlugin.so");
+        Files.copy(file11v5.toPath(), file12v5.toPath());
+    }
+}
+
+task releaseCreateAAR {
+    dependsOn ':aegis-sdk-map:assembleRelease'
+    if(list.contains(2)){
+        dependsOn ':aegis-sdk-navigation:assembleRelease'
+    }
+}
+
+
+//task sdkUploadArchives {
+//    dependsOn ':aegis-sdk-map:uploadArchives'
+//    dependsOn ':aegis-sdk-navigation:uploadArchives'
+//}
+
+copyAllData.mustRunAfter copySoAll
+releaseCreateAAR.mustRunAfter copyAllData
+
+task aBuildSdk{
+    dependsOn(copySoAll)
+    dependsOn(copyAllData)
+}
+
+task aBuildSdk2{
+    dependsOn(releaseCreateAAR)
+}
+
+def createTime = new Date().format("YYYYMMdd", TimeZone.getTimeZone("GMT+08:00"))
+def versionName = rootProject.ext.versionName
+
+aBuildSdk2.doLast {
+    //------------------------------拷贝aar到demo的sdk目录下
+
+    File fileDir = new File(getRootDir().getPath() + "/aegis-sdk-demo/sdk");
+    if(!fileDir.exists()){//如果文件夹不存在
+        fileDir.mkdir();//创建文件夹
+    }
+
+    for(File file: fileDir.listFiles()){
+        if(file.name.contains("aegis-sdk")){
+            file.delete()
+        }
+    }
+
+    File file1map = new File(getRootDir().getPath() + "/aegis-sdk-map/build/outputs/aar/aegis-sdk-map-release.aar");
+    File file2map = new File(getRootDir().getPath() + "/aegis-sdk-demo/sdk/aegis-sdk-map-release-${createTime}-V${versionName}.aar");
+    if(file1map.exists()){//如果文件夹不存在
+        Files.copy(file1map.toPath(), file2map.toPath());
+    }
+
+
+    if(list.contains(2)){
+        File file1navi = new File(getRootDir().getPath() + "/aegis-sdk-navigation/build/outputs/aar/aegis-sdk-navigation-release.aar");
+        File file2navi = new File(getRootDir().getPath() + "/aegis-sdk-demo/sdk/aegis-sdk-navigation-release-${createTime}-V${versionName}.aar");
+        if(file1navi.exists()){//如果文件夹不存在
+            Files.copy(file1navi.toPath(), file2navi.toPath());
+        }
+    }
+
+    //---------------------------恢复map gradle
+
+    File fileMapGradle = new File(getRootDir().getPath() + "/aegis-sdk-map/build.gradle");
+    Files.delete(fileMapGradle.toPath())
+
+    File file1mapGradle = new File(getRootDir().getPath() + "/aegis-sdk-map/buildFlie/back/build.gradle");
+    File file2mapGradle = new File(getRootDir().getPath() + "/aegis-sdk-map/build.gradle");
+    Files.copy(file1mapGradle.toPath(), file2mapGradle.toPath());
+
+    File fileMapBackGradle = new File(getRootDir().getPath() + "/aegis-sdk-map/buildFlie/back/build.gradle");
+    Files.delete(fileMapBackGradle.toPath())
+
+    //-----------------------------删除jar
+
+    File fileCommon = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/common.jar");
+    if(fileCommon.exists()){//如果文件夹不存在
+        Files.delete(fileCommon.toPath())
+    }
+
+    File fileService = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/service.jar");
+    if(fileService.exists()){//如果文件夹不存在
+        Files.delete(fileService.toPath())
+    }
+
+    File fileAuth = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/auth.jar");
+    if(fileAuth.exists()){//如果文件夹不存在
+        Files.delete(fileAuth.toPath())
+    }
+
+    File fileAmap = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/Base_Location_V3.6.1_20171012_new.jar");
+    if(fileAmap.exists()){//如果文件夹不存在
+        Files.delete(fileAmap.toPath())
+    }
+
+    File fileLocation = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/location.jar");
+    if(fileLocation.exists()){//如果文件夹不存在
+        Files.delete(fileLocation.toPath())
+    }
+
+    File fileOffline = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/offline.jar");
+    if(fileOffline.exists()){//如果文件夹不存在
+        Files.delete(fileOffline.toPath())
+    }
+
+    File fileData = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/data.jar");
+    if(fileData.exists()){//如果文件夹不存在
+        Files.delete(fileData.toPath())
+    }
+
+    File fileLog = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/log.jar");
+    if(fileLog.exists()){//如果文件夹不存在
+        Files.delete(fileLog.toPath())
+    }
+
+    File filePluginNavi = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/pluginNavi.jar");
+    if(filePluginNavi.exists()){//如果文件夹不存在
+        Files.delete(filePluginNavi.toPath())
+    }
+
+    File fileGeoconv = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/powergrid.jar");
+    if(fileGeoconv.exists()){//如果文件夹不存在
+        Files.delete(fileGeoconv.toPath())
+    }
+
+    File fileRoute = new File(getRootDir().getPath() + "/aegis-sdk-map/libs/route.jar");
+    if(fileRoute.exists()){//如果文件夹不存在
+        Files.delete(fileRoute.toPath())
+    }
+
+
+    //-----------------------------删除so
+
+    File file1 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/arm64-v8a/libAegisCommon.so");
+    if(file1.exists()){//如果文件夹不存在
+        Files.delete(file1.toPath())
+    }
+
+
+    File file3 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libAegisCommon.so");
+    if(file3.exists()){//如果文件夹不存在
+        Files.delete(file3.toPath())
+    }
+
+    File file4 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/arm64-v8a/libAegisNet.so");
+    if(file4.exists()){//如果文件夹不存在
+        Files.delete(file4.toPath())
+    }
+
+    File file6 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libAegisNet.so");
+    if(file6.exists()){//如果文件夹不存在
+        Files.delete(file6.toPath())
+    }
+
+
+    File file7 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libAegisLoc.so");
+    if(file7.exists()){//如果文件夹不存在
+        Files.delete(file7.toPath())
+    }
+
+    File file8 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/arm64-v8a/libAegisLoc.so");
+    if(file8.exists()){//如果文件夹不存在
+        Files.delete(file8.toPath())
+    }
+
+    File file9 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libNavi3rdPlugin.so");
+    if(file9.exists()){//如果文件夹不存在
+        Files.delete(file9.toPath())
+    }
+
+    File file10 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/arm64-v8a/libNavi3rdPlugin.so");
+    if(file10.exists()){//如果文件夹不存在
+        Files.delete(file10.toPath())
+    }
+
+    File file11 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi/libAegisCommon.so");
+    if(file11.exists()){//如果文件夹不存在
+        Files.delete(file11.toPath())
+    }
+
+
+    File file12 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi/libAegisNet.so");
+    if(file12.exists()){//如果文件夹不存在
+        Files.delete(file12.toPath())
+    }
+
+    File file13 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi/libAegisLoc.so");
+    if(file13.exists()){//如果文件夹不存在
+        Files.delete(file13.toPath())
+    }
+
+    File file14 = new File(getRootDir().getPath() + "/aegis-sdk-map/src/main/jniLibs/armeabi/libNavi3rdPlugin.so");
+    if(file14.exists()){//如果文件夹不存在
+        Files.delete(file14.toPath())
+    }
+}

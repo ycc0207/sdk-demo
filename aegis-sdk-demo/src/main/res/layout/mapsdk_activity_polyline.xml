@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_add_polyline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapsdk_btn_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/mapsdk_polyline_add"
+        android:onClick="onAddPolyline"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_remove_polyline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapsdk_btn_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/mapsdk_polyline_remove"
+        android:onClick="onRemovePolyline"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_polyline" />
+
+    <Button
+        android:id="@+id/btn_add_dash_polyline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapsdk_btn_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/mapsdk_polyline_dash_add"
+        android:onClick="onAddDashPolyline"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_remove_polyline" />
+
+    <Button
+        android:id="@+id/btn_remove_polylines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapsdk_btn_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/mapsdk_polylines_remove"
+        android:onClick="onRemovePolylines"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_dash_polyline" />
+
+</android.support.constraint.ConstraintLayout>

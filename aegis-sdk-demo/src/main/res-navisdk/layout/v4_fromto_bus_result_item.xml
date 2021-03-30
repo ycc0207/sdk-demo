@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/route_10dp"
+            android:background="@drawable/v4_board_list_content_bg_selector"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/route_14dp"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/bus_tag_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/route_14dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/bus_result_item_type_bkg"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_22"
+                    android:visibility="gone"/>
+
+            <TextView
+                    android:id="@+id/bus_tag_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/route_14dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/bus_result_item_type_bkg"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_22"
+                    android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/main_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="30dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="1dp"
+                android:maxLines="3"
+                android:textColor="@color/fromto_bus_main_text_color"
+                android:textSize="@dimen/font_30"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/sub_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/fromto_bus_detail_sub_text_color"
+                android:textSize="@dimen/font_26"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

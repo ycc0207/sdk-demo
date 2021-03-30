@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">思极SDK示例</string>
+    <string name="app_header">思极地图SDK示例</string>
+    <string name="app_info">"首次安装时间: "</string>
+
+    <!-- 首页模块介绍 -->
+    <string name="aegis_map_label">地图模块示例</string>
+    <string name="aegis_loc_label">定位模块示例</string>
+    <string name="aegis_create_label">地图创建示例</string>
+    <string name="aegis_initManage_label">初始化打点示例</string>
+    <string name="aegis_heatMap_label">初始化热力图示例</string>
+    <string name="aegis_initMarker_label">动态打点示例</string>
+    <string name="aegis_query_label">搜索开发示例</string>
+    <string name="aegis_search_label">搜索模块示例</string>
+    <string name="aegis_navi_label">导航模块示例</string>
+    <string name="aegis_plugin_route_label">插件：路线规划示例</string>
+    <string name="aegis_offline_label">离线模块示例</string>
+    <string name="aegis_extend_label">扩展功能示例</string>
+
+    <!-- 首页模块功能描述介绍 -->
+    <string name="aegis_map_description">主要介绍地图SDK各主要功能点</string>
+    <string name="aegis_loc_description">主要介绍地图定位加载显示流程</string>
+    <string name="aegis_create_description">地图创建</string>
+    <string name="aegis_initManage_description">初始化打点</string>
+    <string name="aegis_heatMap_description">初始化热力图</string>
+    <string name="aegis_initMarker_description">动态打点</string>
+    <string name="aegis_query_description">主要介绍搜索开发各类功能接口</string>
+    <string name="aegis_search_description">主要介绍搜索各类功能接口</string>
+    <string name="aegis_navi_description">主要介绍导航SDK的调用流程</string>
+    <string name="aegis_offline_description">主要介绍分城市离线下载调用流程</string>
+    <string name="aegis_ukey_description">主要介绍U盾相关功能接口</string>
+    <string name="aegis_extend_description"></string>
+
+    <!-- 定位提示 -->
+    <string name="notifyTitle">提示</string>
+    <string name="label_location">定位功能</string>
+    <string name="notifyMsg">当前应用缺少必要的定位权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="item_name">基础地图</string>
+
+    <!-- 地图SDK相关字串 -->
+    <!-- 标注相关 -->
+    <string name="mapsdk_marker_add">添加图标</string>
+    <string name="mapsdk_marker_remove">移除图标</string>
+    <string name="mapsdk_markers_remove">移除全标注</string>
+
+    <!-- 面对象相关 -->
+    <string name="mapsdk_polygon_add">添加单面</string>
+    <string name="mapsdk_polygon_remove">移除单面</string>
+    <string name="mapsdk_polygons_remove">移除全标注</string>
+
+    <!-- 线对象相关 -->
+    <string name="mapsdk_polyline_add">添加单线</string>
+    <string name="mapsdk_polyline_dash_add">添加虚线</string>
+    <string name="mapsdk_polyline_remove">移除单线</string>
+    <string name="mapsdk_polylines_remove">移除全标注</string>
+
+    <!-- 相机动画相关 -->
+    <string name="mapsdk_animated_camera_move">相机移动</string>
+    <string name="mapsdk_animated_camera_ease">线性跟随</string>
+    <string name="mapsdk_animated_camera_animated">弧形跟随</string>
+    <string name="mapsdk_animated_cancel_animation">取消动画</string>
+
+    <!-- 相机基础相关 -->
+    <string name="mapsdk_basic_camera_setcenter">设置中心点</string>
+    <string name="mapsdk_basic_camera_setbearing">设置旋转角</string>
+    <string name="mapsdk_basic_camera_settilt">设置俯仰角</string>
+    <string name="mapsdk_basic_camera_listen">相机监听(关)</string>
+
+    <!-- 手势探测相关 -->
+    <string name="mapsdk_gesture_detector">手势探测(关)</string>
+    <string name="mapsdk_gesture_bearing_locked">锁定旋转(关)</string>
+    <string name="mapsdk_gesture_zoom_locked">锁定缩放(关)</string>
+    <string name="mapsdk_gesture_tilt_locked">锁定俯仰(关)</string>
+    <string name="mapsdk_gesture_scroll_locked">锁定移图(关)</string>
+
+    <!-- 范围自适应相关 -->
+    <string name="mapsdk_latlng_bounds">构建相机范围</string>
+    <string name="mapsdk_camera_position_bounds">构建相机位置</string>
+    <string name="mapsdk_bounds_for_target">限制相机中心</string>
+
+    <!-- 地图缩放相关 -->
+    <string name="mapsdk_map_zoomto">缩至0级</string>
+    <string name="mapsdk_map_zoomin">放大1级</string>
+    <string name="mapsdk_map_zoomout">缩小1级</string>
+    <string name="mapsdk_map_zoomby">放大4级</string>
+    <string name="mapsdk_map_zoombyfocus">左上放大4级</string>
+
+    <!-- 地图监听相关 -->
+    <string name="mapsdk_map_listener_setpos">切换视角</string>
+
+    <!-- ui设置相关 -->
+    <string name="mapsdk_uisetting_set_left_top_focal">设左上点为焦点</string>
+    <string name="mapsdk_uisetting_set_center_focal">设中心点为焦点</string>
+    <string name="mapsdk_uisetting_cancel_user_focal">取消用户焦点</string>
+
+    <!-- 地图路况设置 -->
+    <string name="mapsdk_map_debug">开启调试模式</string>
+
+    <!-- 线对象相关 -->
+    <string name="mapsdk_default_style_streets">矢量街区图</string>
+    <string name="mapsdk_default_style_streets_raster512">栅格地图  </string>
+    <string name="mapsdk_default_style_streets_dark">夜景街区图</string>
+    <string name="mapsdk_default_style_satellite512">卫星地图  </string>
+
+    <string name="mapsdk_default_style_1">其它样式1</string>
+    <string name="mapsdk_default_style_2">其它样式2</string>
+    <string name="mapsdk_default_style_3">其它样式3</string>
+    <string name="mapsdk_default_style_4">其它样式4</string>
+    <string name="mapsdk_default_style_5">其它样式5</string>
+    <string name="mapsdk_default_style_6">其它样式6</string>
+
+    <!-- Ukey -->
+    <string name="select_device">连接设备</string>
+    <string name="ip">服务器:  </string>
+    <string name="disconnect">断开连接</string>
+    <string name="BTReturn">Log输出控制台：</string>
+    <string name="return_data">     </string>
+    <string name="operate"> 执行命令 </string>
+    <string name="cmd_prompt">选择命令</string>
+    <string name="uuid_list">选择容器</string>
+    <string name="appoper_list">应用名称</string>
+    <string name="conoper_list">容器名称</string>
+    <string name="symalg_list">选择对称算法</string>
+    <string name="inputpassword">输入密码</string>
+    <string name="password">请在此输入</string>
+    <string name="inputoldpassword">输入旧密码</string>
+    <string name="inputnewpassword">输入新密码</string>
+    <string name="txtplain">明文</string>
+    <string name="txtcipher">密文</string>
+    <string name="txtkey">密钥</string>
+    <string name="txtiv">向量</string>
+    <string name="txt_random_num">随机数文件数量</string>
+    <string name="txt_random_size">随机数长度</string>
+</resources>

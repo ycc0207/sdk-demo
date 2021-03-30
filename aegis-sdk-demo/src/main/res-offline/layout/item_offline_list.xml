@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/download_city_list_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorWhite"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/tv_map_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="城市名称"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_map_size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_map_name"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="地图大小"
+            android:textColor="@color/aegis_gray"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_map_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/tv_map_operate"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_map_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/offline_btn_blue"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginRight="50dp"
+            android:text="下载"
+            android:textColor="@color/aegis_blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_map_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/offline_btn_gray"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="删除"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/aegis_gray"
+            android:textSize="12sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/aegis_blue"
+            android:layout_toLeftOf="@+id/tv_map_operate"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,398 @@
+// ----------------------删除map-sdk模块中的jar包和so库------------------------
+
+// 删除mapsdk模块libs文件夹下的jar包
+task deleteJar(type: Delete) {
+    delete '../aegis-sdk-map/libs/service.jar',
+            '../aegis-sdk-map/libs/common.jar',
+            '../aegis-sdk-map/libs/auth.jar',
+            '../aegis-sdk-map/libs/Base_Location_V3.6.1_20171012_new.jar',
+            '../aegis-sdk-map/libs/location.jar'
+}
+
+// 删除mapsdk模块jniLibs文件夹下的网络和通用模块so库
+task deleteSo(type: Delete) {
+    delete '../aegis-sdk-map/src/main/jniLibs/arm64-v8a/libAegisCommon.so',
+            '../aegis-sdk-map/src/main/jniLibs/armeabi/libAegisCommon.so',
+            '../aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libAegisCommon.so',
+            '../aegis-sdk-map/src/main/jniLibs/arm64-v8a/libAegisNet.so',
+            '../aegis-sdk-map/src/main/jniLibs/armeabi/libAegisNet.so',
+            '../aegis-sdk-map/src/main/jniLibs/armeabi-v7a/libAegisNet.so'
+}
+
+// 删除mapsdk模块依赖的jar包和so库
+task deleteAll(type: Delete){
+    dependsOn(deleteJar, deleteSo)
+}
+
+// ----------------------debug拷贝jar到map模块------------------------
+
+// 将service debug模块的jar包拷贝到mapsdk模块
+task copyDebugService(type: Copy) {
+    from "../aegis-sdk-service/build/intermediates/bundles/debug/classes.jar"
+    into '../aegis-sdk-map/libs'
+    rename { String fileName ->
+        fileName = "service.jar"
+    }
+}
+
+// 将common debug模块的jar包拷贝到mapsdk模块
+task copyDebugCommon(type: Copy) {
+    from "../aegis-sdk-common/build/intermediates/bundles/debug/classes.jar"
+    into '../aegis-sdk-map/libs'
+    rename { String fileName ->
+        fileName = "common.jar"
+    }
+}
+
+// 将auth debug模块的jar包拷贝到mapsdk模块
+task copyDebugAuth(type: Copy) {
+    from "../aegis-sdk-auth/build/intermediates/bundles/debug/classes.jar"
+    into '../aegis-sdk-map/libs'
+    rename { String fileName ->
+        fileName = "auth.jar"
+    }
+}
+
+// 将amap location debug模块的jar包拷贝到mapsdk模块
+task copyAMapLocation(type: Copy) {
+    from '../aegis-sdk-location/libs/Base_Location_V3.6.1_20171012_new.jar'
+    into '../aegis-sdk-map/libs'
+}
+
+// 将location模块的jar包拷贝到mapsdk模块
+task copyDebugLocation(type: Copy) {
+    from "../aegis-sdk-location/build/intermediates/bundles/debug/classes.jar"  // 复制
+    into '../aegis-sdk-map/libs'  // 复制到指定目标目录
+    rename { String fileName -> //在复制时重命名文件
+        fileName = "location.jar" // 重命名
+    }
+}
+
+// 拷贝其他模块jar包到mapsdk模块
+task copyDebugAllJar(type: Copy){
+    dependsOn(copyDebugService, copyDebugCommon, copyDebugAuth, copyAMapLocation, copyDebugLocation)
+}
+
+// ----------------------release拷贝jar到map模块------------------------
+
+// 将service release模块的jar包拷贝到mapsdk模块
+task copyReleaseService(type: Copy) {
+    from "../aegis-sdk-service/build/intermediates/bundles/release/classes.jar"
+    into '../aegis-sdk-map/libs'
+    rename { String fileName ->
+        fileName = "service.jar"
+    }
+}
+
+// 将common release模块的jar包拷贝到mapsdk模块
+task copyReleaseCommon(type: Copy) {
+    from "../aegis-sdk-common/build/intermediates/bundles/release/classes.jar"
+    into '../aegis-sdk-map/libs'
+    rename { String fileName ->
+        fileName = "common.jar"
+    }
+}
+
+// 将auth release模块的jar包拷贝到mapsdk模块
+task copyReleaseAuth(type: Copy) {
+    from "../aegis-sdk-auth/build/intermediates/bundles/release/classes.jar"
+    into '../aegis-sdk-map/libs'
+    rename { String fileName ->
+        fileName = "auth.jar"
+    }
+}
+
+// 将location release模块的jar包拷贝到mapsdk模块
+task copyReleaseLocation(type: Copy) {
+    from "../aegis-sdk-location/build/intermediates/bundles/release/classes.jar"
+    into '../aegis-sdk-map/libs'
+    rename { String fileName ->
+        fileName = "location.jar"
+    }
+}
+
+// 拷贝其他模块jar包到mapsdk模块
+task copyReleaseAllJar(type: Copy){
+    dependsOn(copyReleaseService, copyReleaseCommon, copyReleaseAuth, copyAMapLocation, copyReleaseLocation)
+}
+
+//---------------------------拷贝so到map模块--------------------------------
+
+task copyV8aSo(type: Copy) {
+    from "../aegis-sdk-auth/src/main/jniLibs/arm64-v8a/libAegisCommon.so"
+    into '../aegis-sdk-map/src/main/jniLibs/arm64-v8a'
+    from "../aegis-sdk-auth/src/main/jniLibs/arm64-v8a/libAegisNet.so"
+    into '../aegis-sdk-map/src/main/jniLibs/arm64-v8a'
+}
+
+task copyV7aSo(type: Copy) {
+    from "../aegis-sdk-auth/src/main/jniLibs/armeabi-v7a/libAegisCommon.so"
+    into '../aegis-sdk-map/src/main/jniLibs/armeabi-v7a'
+    from "../aegis-sdk-auth/src/main/jniLibs/armeabi-v7a/libAegisNet.so"
+    into '../aegis-sdk-map/src/main/jniLibs/armeabi-v7a'
+}
+
+task copyArmSo(type: Copy) {
+    from "../aegis-sdk-auth/src/main/jniLibs/armeabi/libAegisCommon.so"
+    into '../aegis-sdk-map/src/main/jniLibs/armeabi'
+    from "../aegis-sdk-auth/src/main/jniLibs/armeabi/libAegisNet.so"
+    into '../aegis-sdk-map/src/main/jniLibs/armeabi'
+}
+
+// 拷贝其他模块so库到mapsdk模块
+task copyAllSo(type: Copy){
+    dependsOn(copyV8aSo, copyV7aSo, copyArmSo)
+}
+
+// --------------------------拷贝使用jar和so方式的build.gradle到map模块------------------------------------
+
+task copyMapGradle(type: Copy) {
+    from "../aegis-sdk-map/buildFlie/sdk/build.gradle"  // 复制
+    into '../aegis-sdk-map'  // 复制到指定目标目录
+}
+
+task backMapGradle(type: Copy) {
+    from "../aegis-sdk-map/build.gradle"
+    into '../aegis-sdk-map/buildFlie/back'  // 复制到指定目标目录
+}
+
+task recoverMapGradle(type: Copy){
+    from "../aegis-sdk-map/buildFlie/back/build.gradle"  // 复制
+    into '../aegis-sdk-map'  // 复制到指定目标目录
+}
+
+task removeBaskMapGradle(type: Delete){
+    delete '../aegis-sdk-map/buildFlie/back/build.gradle'
+}
+
+//----------------------------------------------------------------------
+
+//拷贝build.gradle之前先拷贝jar和so，以及备份build.gradle
+copyMapGradle.mustRunAfter copyDebugAllJar
+copyMapGradle.mustRunAfter copyReleaseAllJar
+copyMapGradle.mustRunAfter copyAllSo
+copyMapGradle.mustRunAfter backMapGradle
+
+//删除备份的build.gradle之前先恢复build.gradle
+removeBaskMapGradle.mustRunAfter recoverMapGradle
+
+
+//----------------------------------------------------------------
+def createTime = new Date().format("YYYYMMdd", TimeZone.getTimeZone("GMT+08:00"))
+def versionName = rootProject.ext.versionName
+
+task copyDebugMapAar(type: Copy) {
+    from "../aegis-sdk-map/build/outputs/aar/aegis-sdk-map-debug.aar"  // 复制
+    into 'sdk'  // 复制到指定目标目录
+    rename { String fileName -> //在复制时重命名文件
+        fileName = "aegis-sdk-map-debug-${createTime}-V${versionName}.aar" // 重命名
+    }
+}
+
+
+task copyDebugNavigationAar(type: Copy) {
+    from "../aegis-sdk-navigation/build/outputs/aar/aegis-sdk-navigation-debug.aar"  // 复制
+    into 'sdk'  // 复制到指定目标目录
+    rename { String fileName -> //在复制时重命名文件
+        fileName = "aegis-sdk-navigation-debug-${createTime}-V${versionName}.aar" // 重命名
+    }
+}
+
+task copyReleaseMapAar(type: Copy) {
+    from "../aegis-sdk-map/build/outputs/aar/aegis-sdk-map-release.aar"  // 复制
+    into 'sdk'  // 复制到指定目标目录
+    rename { String fileName -> //在复制时重命名文件
+        fileName = "aegis-mapsdk-release-v${versionName}-${createTime}.aar" // 重命名
+    }
+}
+
+
+task copyReleaseNavigationAar(type: Copy) {
+    from "../aegis-sdk-navigation/build/outputs/aar/aegis-sdk-navigation-release.aar"  // 复制
+    into 'sdk'  // 复制到指定目标目录
+    rename { String fileName -> //在复制时重命名文件
+        fileName = "aegis-navisdk-release-v${versionName}-${createTime}.aar" // 重命名
+    }
+}
+
+//--------------------------------------------------------------------
+
+task aCreateDebugSDK(){
+    dependsOn(copyMapGradle,copyAllSo,copyDebugAllJar,backMapGradle)
+}
+
+task deleteSdkOld(type: Delete) << {
+    fileTree(dir: 'sdk').each {File file ->
+        delete file
+    }
+}
+
+copyDebugMapAar.mustRunAfter deleteSdkOld
+copyDebugNavigationAar.mustRunAfter deleteSdkOld
+copyReleaseMapAar.mustRunAfter deleteSdkOld
+copyReleaseNavigationAar.mustRunAfter deleteSdkOld
+
+task aClearDebugSDK(){
+    dependsOn(deleteAll)
+    dependsOn(deleteSdkOld)
+    dependsOn(recoverMapGradle, removeBaskMapGradle)
+    dependsOn(copyDebugMapAar, copyDebugNavigationAar)
+}
+
+task aCreateReleaseSDK(){
+    dependsOn(copyMapGradle,copyAllSo,copyReleaseAllJar,backMapGradle)
+}
+
+task aClearReleaseSDK(){
+    dependsOn(deleteAll)
+    dependsOn(deleteSdkOld)
+    dependsOn(recoverMapGradle, removeBaskMapGradle)
+    dependsOn(copyReleaseMapAar, copyReleaseNavigationAar)
+}
+
+//----------------------------debug aar-------------------------------------
+
+task assembleDebugCreateJar() {
+    dependsOn ':aegis-sdk-auth:assembleDebug'
+    dependsOn ':aegis-sdk-common:assembleDebug'
+    dependsOn ':aegis-sdk-location:assembleDebug'
+    dependsOn ':aegis-sdk-service:assembleDebug'
+}
+task assembleDebugCreateAar() {
+    dependsOn ':aegis-sdk-map:assembleDebug'
+    dependsOn ':aegis-sdk-navigation:assembleDebug'
+}
+
+
+aCreateDebugSDK.mustRunAfter assembleDebugCreateJar
+assembleDebugCreateAar.mustRunAfter aCreateDebugSDK
+aClearDebugSDK.mustRunAfter assembleDebugCreateAar
+
+task aCreateDebugSDKAll(){
+    dependsOn(aCreateDebugSDK, assembleDebugCreateJar, assembleDebugCreateAar, aClearDebugSDK)
+}
+
+//-----------------------------------------------------------------
+
+//---------------------------------------------------------------
+
+task backAuthProGuardGradle(type:Copy) {
+    from "../aegis-sdk-auth/build.gradle"
+    into '../aegis-sdk-auth/buildFlie/back'
+}
+task backCommonnProGuardGradle(type:Copy) {
+    from "../aegis-sdk-common/build.gradle"
+    into '../aegis-sdk-common/buildFlie/back'  // 复制到指定目标目录
+}
+task backServiceProGuardGradle(type:Copy) {
+    from "../aegis-sdk-service/build.gradle"
+    into '../aegis-sdk-service/buildFlie/back'  // 复制到指定目标目录
+}
+
+task backProGuardGradle() {
+    dependsOn(backAuthProGuardGradle,backCommonnProGuardGradle,backServiceProGuardGradle)
+}
+//-----------------------------------------------------------
+
+task copyAuthProGuardGradle(type:Copy) {
+    from "../aegis-sdk-auth/buildFlie/sdk/build.gradle"  // 复制
+    into '../aegis-sdk-auth'  // 复制到指定目标目录
+}
+task copyCommonProGuardGradle(type:Copy) {
+    from "../aegis-sdk-common/buildFlie/sdk/build.gradle"  // 复制
+    into '../aegis-sdk-common'  // 复制到指定目标目录
+}
+task copyServiceProGuardGradle(type:Copy) {
+    from "../aegis-sdk-service/buildFlie/sdk/build.gradle"  // 复制
+    into '../aegis-sdk-service'  // 复制到指定目标目录
+}
+task copyProGuardGradle() {
+    dependsOn(copyAuthProGuardGradle,copyCommonProGuardGradle,copyServiceProGuardGradle)
+}
+//copyProGuardGradle.mustRunAfter backProGuardGradle
+//---------------------------------------------------------------
+
+task recoverAuthProGuardGradle(type: Copy){
+    from "../aegis-sdk-auth/buildFlie/back/build.gradle"  // 复制
+    into '../aegis-sdk-auth'  // 复制到指定目标目录
+}
+task recoverCommonProGuardGradle(type: Copy){
+    from "../aegis-sdk-common/buildFlie/back/build.gradle"  // 复制
+    into '../aegis-sdk-common'  // 复制到指定目标目录
+}
+task recoverServiceProGuardGradle(type: Copy){
+    from "../aegis-sdk-service/buildFlie/back/build.gradle"  // 复制
+    into '../aegis-sdk-service'  // 复制到指定目标目录
+}
+task recoverProGuardGradle() {
+    dependsOn(recoverAuthProGuardGradle,recoverCommonProGuardGradle,recoverServiceProGuardGradle)
+}
+
+//------------------------------------------------------------
+
+
+task removeBaskAuthProGuardGradle(type: Delete){
+    delete '../aegis-sdk-auth/buildFlie/back/build.gradle'
+}
+task removeBaskCommonProGuardGradle(type: Delete){
+    delete '../aegis-sdk-common/buildFlie/back/build.gradle'
+}
+task removeBaskServiceProGuardGradle(type: Delete){
+    delete '../aegis-sdk-service/buildFlie/back/build.gradle'
+}
+
+task removeBaskProGuardGradle(){
+    dependsOn(removeBaskAuthProGuardGradle,removeBaskCommonProGuardGradle,removeBaskServiceProGuardGradle)
+}
+
+//-----------------------------release aar------------------------------------
+
+task assembleReleaseCreateJar() {
+    dependsOn ':aegis-sdk-auth:assembleRelease'
+    dependsOn ':aegis-sdk-common:assembleRelease'
+    dependsOn ':aegis-sdk-location:assembleRelease'
+    dependsOn ':aegis-sdk-service:assembleRelease'
+    dependsOn ':aegis-android-service:assembleRelease'
+
+}
+task assembleReleaseCreateAar() {
+    dependsOn ':aegis-sdk-map:assembleRelease'
+    dependsOn ':aegis-sdk-navigation:assembleRelease'
+}
+
+
+copyProGuardGradle.mustRunAfter backProGuardGradle
+
+task aPrepareProGuardGradle(){
+    dependsOn(copyProGuardGradle, backProGuardGradle)
+}
+
+removeBaskProGuardGradle.mustRunAfter recoverProGuardGradle
+
+task aClearProGuardGradle(){
+    dependsOn(removeBaskProGuardGradle, recoverProGuardGradle)
+
+}
+
+
+aCreateReleaseSDK.mustRunAfter assembleReleaseCreateJar
+assembleReleaseCreateAar.mustRunAfter aCreateReleaseSDK
+aClearReleaseSDK.mustRunAfter assembleReleaseCreateAar
+
+task aCreateReleaseSDKAll(){
+    dependsOn(aCreateReleaseSDK, assembleReleaseCreateJar, assembleReleaseCreateAar, aClearReleaseSDK)
+}
+
+
+
+aClearProGuardGradle.mustRunAfter aCreateReleaseSDKAll
+
+
+aCreateReleaseSDKAll.mustRunAfter aPrepareProGuardGradle
+
+task aCreateReleaseProGuardSDKAll(){
+    dependsOn(aPrepareProGuardGradle)
+}
+
+
+//-----------------------------------------------------------------

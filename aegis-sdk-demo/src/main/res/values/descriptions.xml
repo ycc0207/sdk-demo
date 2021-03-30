@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标注对象创建 -->
+    <string name="description_marker">主要介绍图标的创建和操作</string>
+    <string name="description_polyline">主要介绍单线和多线的创建和操作</string>
+    <string name="description_polygon">主要介绍面、多面及带孔面的创建和操作</string>
+    <string name="description_power_grid">主要介绍电网图层创建</string>
+    <!-- 地图相机操作 -->
+    <string name="description_map_listener">主要介绍地图相关监听接口</string>
+    <string name="description_animated_camera">主要介绍相机的常用动画操作</string>
+    <string name="description_basic_camera">主要介绍相机的监听事件创建和各类操作</string>
+    <string name="description_gesture_detector">主要介绍监听手势操作的流程</string>
+    <string name="description_latlng_bounds">主要介绍可通过自定义范围来自适应地图</string>
+    <string name="description_map_zoom">主要介绍地图的缩放常见接口调用</string>
+    <string name="description_map_traffic">主要介绍使用标准地图插件显示路况的接口</string>
+    <!-- 要素查询 -->
+    <string name="description_query_feature">主要介绍如何通过点击地图获取poi点信息</string>
+    <string name="description_query_point">主要介绍如何通过点查询地图要素信息</string>
+    <string name="description_query_rect">主要介绍如何通过矩形框来操作和查询地图要素</string>
+    <string name="description_query_source">主要介绍如何查询地图数据源指定的要素信息</string>
+    <!-- 地图碎片创建 -->
+    <string name="description_map_frament">主要介绍地图碎片的创建过程</string>
+    <!-- 信息窗口创建 -->
+    <string name="description_infowindow">主要介绍如何创建信息窗口和自定义信息窗口</string>
+    <!-- 实时路况创建 -->
+    <string name="description_traffic">主要介绍如何创建实时路况</string>
+    <!-- 地图定位操作 -->
+    <string name="description_location">主要介绍如何在地图上创建用户定位信息</string>
+    <!-- 地图截图操作 -->
+    <string name="description_snapshot">主要介绍如何截取地图视图内容</string>
+    <!-- 样式样式操作 -->
+    <string name="description_default_style">主要介绍地图默认几种样式的切换</string>
+    <string name="description_show_and_hide_layer">主要介绍地图图层的显示和隐藏</string>
+    <string name="description_circle_layer">主要介绍圆圈图层的创建流程</string>
+    <string name="description_symbol_layer">主要介绍符号图层的创建流程</string>
+    <string name="description_symbol_text_layer">主要介绍符号文字图层的创建流程</string>
+    <string name="description_symbol_layer_cluster">主要介绍符号图层聚类的创建流程</string>
+    <string name="description_symbol_switch_on_zoom">主要介绍符号图层根据比例尺改变图片的创建流程</string>
+    <string name="description_symbol_change">主要介绍符号图层的元素更新</string>
+    <string name="description_heat_layer">主要介绍热力图层的创建流程</string>
+    <string name="description_line_layer">主要介绍线图层的创建流程</string>
+    <string name="description_line_zoom_layer">主要介绍线变化图层的创建流程</string>
+    <string name="description_data_driven_style">主要介绍如何利用数据来驱动样式的相关操作</string>
+    <string name="description_geojson_source">主要介绍GeoJson数据源的创建和图层显示</string>
+    <string name="description_image_source">主要介绍ImageSource数据源的创建和图层显示</string>
+    <string name="description_geojson_cluster">主要介绍GeoJson数据源聚类的创建和显示</string>
+    <string name="description_line_gradient_layer">主要介绍线渐变图层的创建流程</string>
+    <!-- 地图纹理视图创建 -->
+    <string name="description_texture_view">主要介绍地图纹理视图的创建和各类操作</string>
+    <!-- 地图UI设置 -->
+    <string name="description_uisetting">主要介绍地图UI设置的常用接口</string>
+    <!-- 地图图钉动画 -->
+    <string name="description_icon_anim">主要介绍地图图钉可设置的出现动画</string>
+    <string name="description_marker_anim">主要介绍地图图标移动动画</string>
+    <string name="description_map_gif">主要介绍地图加载git动画</string>
+    <string name="description_marker_gif">主要介绍Marker加载git动画</string>
+    <string name="description_trace_play_anim">主要介绍地图轨迹回放动画</string>
+    <!-- 调试操作 -->
+    <string name="description_icon_debug">主要用于手动crash</string>
+
+    <!-- 计算工具 -->
+    <string name="description_coordconvert">坐标系转换</string>
+    <string name="description_convertgeo2point">经纬度转屏幕坐标</string>
+    <string name="description_cal_dis">两点间距离</string>
+    <string name="description_convertpoint2geo">获取屏幕顶点坐标</string>
+    <string name="description_road_correct">纠偏绑路</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="10dp">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:src="#cccccc" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:src="@color/font_cb" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_progress_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.epgis.offline.widget.AutoScaleTextView
+                android:id="@+id/tv_progress_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:textColor="@color/font_cb"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

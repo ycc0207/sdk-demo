@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:D.\sdk-demo\aegis-sdk-demo\sdk\aegis-sdk-map-release-20200810-V1.2.0.aar:unspecified@jar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/libs/auth.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/libs/Base_Location_V3.6.1_20171012_new.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/libs/common.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/libs/data.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/libs/location.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/libs/log.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/libs/offline.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/879674b2da4ab500c9d45984f743136f/aegis-sdk-map-release-20200810-V1.2.0/jars/libs/service.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

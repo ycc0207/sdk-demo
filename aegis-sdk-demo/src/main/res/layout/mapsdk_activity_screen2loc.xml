@@ -1,0 +1,27 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/result"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:layout_alignParentBottom="true"
+		android:text="结果："/>
+
+   <Button
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:layout_above="@id/result"
+	   android:id="@+id/bt_sceent_2_geo"
+	   android:text="获取顶点坐标"/>
+
+	<com.epgis.mapsdk.maps.MapView
+		android:id="@+id/mymapView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@id/bt_sceent_2_geo"/>
+
+</RelativeLayout>

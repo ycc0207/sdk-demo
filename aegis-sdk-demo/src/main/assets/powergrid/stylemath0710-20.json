@@ -1,0 +1,3149 @@
+{
+   "glyphs" : "",
+   "id" : 1,
+   "layers" : [
+      {
+         "filter" : [ "==", "sbzlx", 10100201 ],
+         "id" : "101002_0",
+         "maxzoom" : 21,
+         "minzoom" : 7,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101002",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10100301 ],
+         "id" : "101003_1",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101003",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10100501 ],
+         "id" : "101005_2",
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-pattern" : [ "get", "LINEPATTERN" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101005",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10100601 ],
+         "id" : "101006_3",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101006",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10100602 ],
+         "id" : "101006_4",
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-pattern" : [ "get", "LINEPATTERN" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101006",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10100701 ],
+         "id" : "101007_5",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101007",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10100702 ],
+         "id" : "101007_6",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101007",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10100801 ],
+         "id" : "101008_7",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101008",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10100801 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "101008_8",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101008",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10100901 ],
+         "id" : "101009_9",
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101009",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101001 ],
+         "id" : "101010_10",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101010",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10101001 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "101010_11",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101010",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101101 ],
+         "id" : "101011_12",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101011",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10101101 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "101011_13",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101011",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101201 ],
+         "id" : "101012_14",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101012",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101301 ],
+         "id" : "101013_15",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101013",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101501 ],
+         "id" : "101015_16",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101015",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101601 ],
+         "id" : "101016_17",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101016",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101701 ],
+         "id" : "101017_18",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101017",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101801 ],
+         "id" : "101018_19",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101018",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10101901 ],
+         "id" : "101019_20",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101019",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10102001 ],
+         "id" : "101020_21",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101020",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10102101 ],
+         "id" : "101021_22",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101021",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10102201 ],
+         "id" : "101022_23",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101022",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10102401 ],
+         "id" : "101024_24",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101024",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10102401 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "101024_25",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101024",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10102501 ],
+         "id" : "101025_26",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "101025",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 1020010100 ],
+         "id" : "102001_27",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 10,
+         "minzoom" : 7,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200101 ],
+         "id" : "102001_28",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200101 ],
+         "id" : "102001_29",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 1020010200 ],
+         "id" : "102001_30",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 10,
+         "minzoom" : 7,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200102 ],
+         "id" : "102001_31",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200102 ],
+         "id" : "102001_32",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200103 ],
+         "id" : "102001_33",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200103 ],
+         "id" : "102001_34",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200104 ],
+         "id" : "102001_35",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200104 ],
+         "id" : "102001_36",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200105 ],
+         "id" : "102001_37",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200105 ],
+         "id" : "102001_38",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200106 ],
+         "id" : "102001_39",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200106 ],
+         "id" : "102001_40",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 1020010700 ],
+         "id" : "102001_41",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200107 ],
+         "id" : "102001_42",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200108 ],
+         "id" : "102001_43",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200108 ],
+         "id" : "102001_44",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200109 ],
+         "id" : "102001_45",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200109 ],
+         "id" : "102001_46",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200110 ],
+         "id" : "102001_47",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200110 ],
+         "id" : "102001_48",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200111 ],
+         "id" : "102001_49",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200111 ],
+         "id" : "102001_50",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200113 ],
+         "id" : "102001_51",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200113 ],
+         "id" : "102001_52",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200101 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_53",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200101 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_54",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200102 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_55",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200102 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_56",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200103 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_57",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200103 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_58",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200104 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_59",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200104 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_60",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200105 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_61",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200105 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_62",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200106 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_63",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200106 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_64",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200107 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102001_65",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 1020020100 ],
+         "id" : "102002_66",
+         "maxzoom" : 10,
+         "minzoom" : 7,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102002",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200201 ],
+         "id" : "102002_67",
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102002",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 1020020200 ],
+         "id" : "102002_68",
+         "maxzoom" : 10,
+         "minzoom" : 7,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102002",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10200202 ],
+         "id" : "102002_69",
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102002",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 2147483647 ],
+         "id" : "102002_70",
+         "maxzoom" : 14,
+         "minzoom" : 12,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102002",
+         "type" : "line"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 10200201 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "102002_71",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "102002",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10300101 ],
+         "id" : "103001_72",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "103001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10300201 ],
+         "id" : "103002_73",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "103002",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10300301 ],
+         "id" : "103003_74",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "103003",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10300401 ],
+         "id" : "103004_75",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "103004",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10300601 ],
+         "id" : "103006_76",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "103006",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 10301301 ],
+         "id" : "103013_77",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "103013",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 30101501 ],
+         "id" : "301015_78",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "301015",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40100201 ],
+         "id" : "401002_79",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "401002",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40100301 ],
+         "id" : "401003_80",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "401003",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40100401 ],
+         "id" : "401004_81",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "401004",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40200101 ],
+         "id" : "402001_82",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-pattern" : [ "get", "LINEPATTERN" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40200102 ],
+         "id" : "402001_83",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-pattern" : [ "get", "LINEPATTERN" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40200103 ],
+         "id" : "402001_84",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-pattern" : [ "get", "LINEPATTERN" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40200104 ],
+         "id" : "402001_85",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-pattern" : [ "get", "LINEPATTERN" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40200201 ],
+         "id" : "402002_86",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402002",
+         "type" : "line"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 40200201 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "402002_87",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402002",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40200401 ],
+         "id" : "402004_88",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402004",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 40200401 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "402004_89",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402004",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40200501 ],
+         "id" : "402005_90",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402005",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40200601 ],
+         "id" : "402006_91",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402006",
+         "type" : "line"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 40200601 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "402006_92",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "402006",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40300701 ],
+         "id" : "403007_93",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "403007",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 40300701 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "403007_94",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "403007",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40300801 ],
+         "id" : "403008_95",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "403008",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 40300801 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "403008_96",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "403008",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40301001 ],
+         "id" : "403010_97",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "403010",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 40301001 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "403010_98",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "403010",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40400101 ],
+         "id" : "404001_99",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "404001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40400201 ],
+         "id" : "404002_100",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "404002",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 40400301 ],
+         "id" : "404003_101",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "404003",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100201 ],
+         "id" : "701002_102",
+         "maxzoom" : 21,
+         "minzoom" : 7,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701002",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100301 ],
+         "id" : "701003_103",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701003",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100501 ],
+         "id" : "701005_104",
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-pattern" : [ "get", "LINEPATTERN" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701005",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100601 ],
+         "id" : "701006_105",
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701006",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100602 ],
+         "id" : "701006_106",
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-pattern" : [ "get", "LINEPATTERN" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701006",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100701 ],
+         "id" : "701007_107",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701007",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100702 ],
+         "id" : "701007_108",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701007",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100801 ],
+         "id" : "701008_109",
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701008",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70100901 ],
+         "id" : "701009_110",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701009",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101001 ],
+         "id" : "701010_111",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701010",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70101001 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "701010_112",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701010",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101101 ],
+         "id" : "701011_113",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701011",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101105 ],
+         "id" : "701011_114",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701011",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70101101 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "701011_115",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701011",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70101105 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "701011_116",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 15,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701011",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101201 ],
+         "id" : "701012_117",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701012",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101301 ],
+         "id" : "701013_118",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701013",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70101301 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "701013_119",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701013",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101401 ],
+         "id" : "701014_120",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701014",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70101401 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "701014_121",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701014",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101501 ],
+         "id" : "701015_122",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701015",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70101501 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "701015_123",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701015",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101601 ],
+         "id" : "701016_124",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701016",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70101601 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "701016_125",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701016",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101701 ],
+         "id" : "701017_126",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701017",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101801 ],
+         "id" : "701018_127",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701018",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70101901 ],
+         "id" : "701019_128",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701019",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70102001 ],
+         "id" : "701020_129",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "701020",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70200101 ],
+         "id" : "702001_130",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "702001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70200101 ],
+         "id" : "702001_131",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "702001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70200102 ],
+         "id" : "702001_132",
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "line-color" : [ "get", "LINECOLOR" ],
+            "line-opacity" : [ "get", "LINEOPACITY" ],
+            "line-width" : [ "get", "LINEWIDTH" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "702001",
+         "type" : "line"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70200102 ],
+         "id" : "702001_133",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "702001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70200101 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "702001_134",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "702001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70200101 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "702001_135",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "702001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70200102 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "702001_136",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "line-center",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 17,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "702001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70200102 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "702001_137",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 17,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "702001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70300101 ],
+         "id" : "703001_138",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "703001",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70300201 ],
+         "id" : "703002_139",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "703002",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [ "==", "sbzlx", 70300301 ],
+         "id" : "703003_140",
+         "layout" : {
+            "icon-image" : [ "get", "ICONIMAGE" ],
+            "icon-pitch-alignment" : "map",
+            "icon-rotate" : [ "get", "ICONROTATE" ],
+            "icon-rotation-alignment" : "map",
+            "icon-size" : [ "get", "ICONSIZE" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-color" : [ "get", "ICONCOLOR" ],
+            "icon-opacity" : [ "get", "ICONOPACITY" ],
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "703003",
+         "type" : "symbol"
+      },
+      {
+         "filter" : [
+            "all",
+            [ "==", "sbzlx", 70300301 ],
+            [ "==", "VISIBILITY", "visible" ]
+         ],
+         "id" : "703003_141",
+         "layout" : {
+            "icon-pitch-alignment" : "map",
+            "icon-rotation-alignment" : "map",
+            "symbol-placement" : "point",
+            "text-allow-overlap" : [ "get", "TEXTALLOWOVERLAP" ],
+            "text-anchor" : [ "get", "TEXTANCHOR" ],
+            "text-field" : "{TEXTFIELD}",
+            "text-font" : [ "get", "TEXTFONT" ],
+            "text-max-width" : [ "get", "TEXTMAXWIDTH" ],
+            "text-offset" : [ "get", "TEXT0FFSET" ],
+            "text-rotate" : [ "get", "TEXTROTATE" ],
+            "text-size" : [ "get", "TEXTSIZE" ],
+            "visibility" : [ "get", "VISIBILITY" ]
+         },
+         "maxzoom" : 21,
+         "minzoom" : 5,
+         "paint" : {
+            "icon-scaleable" : [ "get", "ICONSCALEABLE" ],
+            "text-color" : [ "get", "TEXTCOLOR" ],
+            "text-opacity" : [ "get", "TEXTOPACITY" ]
+         },
+         "source" : "PowerGrid",
+         "source-layer" : "703003",
+         "type" : "symbol"
+      }
+   ],
+   "name" : "PowerGrid",
+   "sources" : {
+      "PowerGrid" : {
+         "type" : "vector",
+         "url" : ""
+      }
+   },
+   "sprite" : "",
+   "version" : 8
+}

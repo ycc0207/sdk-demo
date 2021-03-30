@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:text="lat:"/>
+            <EditText
+                android:id="@+id/lat1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:text="lng:"/>
+            <EditText
+                android:id="@+id/lng1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:text="lat:"/>
+            <EditText
+                android:id="@+id/lat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:text="lng:"/>
+            <EditText
+                android:id="@+id/lng2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_cal_dis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="计算距离"/>
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="结果:"/>
+
+
+
+</LinearLayout>

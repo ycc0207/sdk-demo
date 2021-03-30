@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/laout_navi"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f7efef"
+    >
+
+    <!-- title -->
+    <!-- map -->
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/mymapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- span -->
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/navi_span"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/navi_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_1_1"
+            android:src="@mipmap/line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_1_1"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/btn_tran_change"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_change_bg"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/btn_loc"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/btn_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="当前位置"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_start_place"
+                style="@style/defaultTextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:textColorHint="@color/gray"
+                android:layout_toLeftOf="@id/btn_loc"
+                android:layout_toRightOf="@id/btn_tran_change"
+                android:background="@drawable/text_border_black"
+                android:editable="false"
+                android:hint="输入起点"
+                android:padding="4dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/et_end_place"
+                style="@style/defaultTextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:textColorHint="@color/gray"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/text_border_black"
+                android:editable="false"
+                android:hint="输入终点"
+                android:padding="2dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/btn_exchange"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="交换"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_search"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/btn_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="算路"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/route_option"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="@color/white"
+        android:layout_below="@id/navi_span"
+        android:orientation="horizontal"
+        android:paddingTop="2dip">
+
+        <CheckBox
+            android:id="@+id/checkbox_duobiyongdu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="躲避拥堵"
+            android:textSize="12dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_avoid_fee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="躲避收费"
+            android:textSize="12dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nothighspeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不走高速"
+            android:textSize="12dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_highspeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高速优先"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_below="@id/route_option"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="2dip">
+
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="驾车"
+            android:id="@+id/radio_car"
+            />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公交"
+                android:id="@+id/radio_bus"
+                />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步行"
+            android:id="@+id/radio_foot"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="骑行"
+                android:id="@+id/radio_bike"/>
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+
+    <!--底部-->
+    <LinearLayout android:id="@+id/mul_route_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <!--底部-->
+    <LinearLayout android:id="@+id/btn_navi_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_route_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="45dp"
+            android:text="路线详情"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_30"
+            android:background="@drawable/route_navi_blue_btn_selector"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="45dp"
+            android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_simunavi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="45dp"
+            android:text="模拟导航"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_30"
+            android:background="@drawable/route_navi_blue_btn_selector"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="45dp"
+            android:background="@color/white"/>
+        <Button
+            android:id="@+id/btn_startnavi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="45dp"
+            android:text="导航"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_30"
+            android:background="@drawable/route_navi_blue_btn_selector"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_01"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:text="01"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_02"
+        android:visibility="gone"
+        android:layout_below="@id/bt_01"
+        android:text="02"/>
+
+
+
+
+</RelativeLayout>

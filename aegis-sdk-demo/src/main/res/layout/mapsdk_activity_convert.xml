@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+        <LinearLayout 
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="horizontal"
+            	android:layout_weight="1">
+            <TextView 
+            	android:layout_width="23dp"
+            	android:layout_height="wrap_content"
+            	android:gravity="center|left"
+            	android:textColor="@color/black"
+            	android:text="lat:"/>
+            <EditText 
+                android:id="@+id/lat1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout 
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="horizontal"
+            	android:layout_weight="1">
+            <TextView 
+            	android:layout_width="23dp"
+            	android:layout_height="wrap_content"
+            	android:gravity="center|left"
+            	android:textColor="@color/black"
+            	android:text="lng:"/>
+            <EditText 
+                android:id="@+id/lng1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+    </LinearLayout>
+
+	<Button
+		android:id="@+id/bt_w84_sg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="WGS84转SG坐标"/>
+
+	<Button
+		android:id="@+id/bt_cgcs2000_sg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="大地2000转SG坐标"/>
+
+     <LinearLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical" >
+     <TextView 
+         android:id="@+id/result"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="5dp"
+         android:textColor="#000000"
+         android:textSize="18.0sp"
+         android:layout_weight="1"/>
+     </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+ext {
+
+    // 最小sdk版本号
+    minSdkVersion     = 14
+    // 目标sdk版本号
+    targetSdkVersion  = 28
+    // 编译sdk版本号
+    compileSdkVersion = 28
+    // 编译工具版本号
+    buildToolsVersion = '26.0.3'
+
+    // sdk版本号
+    versionCode       = 120
+    // sdk版本名称
+    versionName       = "1.2.0"
+
+    // 支持库版本号
+    supportLibVersion = "27.0.2"
+    // 约束布局版本号
+    constraintLayout  = '1.0.2'
+    // 内存泄漏工具版本号
+    leakCanaryVersion = '1.5.1'
+    // squareup封装网络框架版本号
+    retrofit          = '2.3.0'
+    // squareup网络请求框架版本号
+    okhttp3           = '3.9.1'
+    // google json序列解析版本号
+    gson              = '2.8.2'
+    // jakewharton打日志工具版本号
+    timber            = '4.5.1'
+    butterknife       = '8.8.1'
+    // autoValue 版本号
+    autoValueGson     = '0.7.0'
+    autoValue         = '1.5'
+    autoValueParcel   = '0.2.5'
+
+    // 数据库帮助类版本号
+    greendao          = '3.2.2'
+    // 事件总线版本号
+    eventbus          = '3.0.0'
+
+    dep = [
+            // support
+            supportAnnotations     : "com.android.support:support-annotations:${supportLibVersion}",
+            supportAppcompatV7     : "com.android.support:appcompat-v7:${supportLibVersion}",
+            supportFragmentV4      : "com.android.support:support-fragment:${supportLibVersion}",
+            supportDesign          : "com.android.support:design:${supportLibVersion}",
+            supportRecyclerView    : "com.android.support:recyclerview-v7:${supportLibVersion}",
+            supportConstraintLayout: "com.android.support.constraint:constraint-layout:${constraintLayout}",
+            supportCardView        : "com.android.support:cardview-v7:${supportLibVersion}",
+
+            // squareup
+            retrofit               : "com.squareup.retrofit2:retrofit:${retrofit}",
+            retrofit2Gson          : "com.squareup.retrofit2:converter-gson:${retrofit}",
+            okhttp3Logging         : "com.squareup.okhttp3:logging-interceptor:${okhttp3}",
+            okhttp3Mockwebserver   : "com.squareup.okhttp3:mockwebserver:${okhttp3}",
+            okhttp3                : "com.squareup.okhttp3:okhttp:${okhttp3}",
+            leakCanaryDebug        : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+            leakCanaryRelease      : "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
+
+            // google
+            gson                   : "com.google.code.gson:gson:${gson}",
+
+            // jakewharton
+            timber                 : "com.jakewharton.timber:timber:${timber}",
+
+            // AutoValue
+            autoValue              : "com.google.auto.value:auto-value:${autoValue}",
+            autoValuesParcel       : "com.ryanharter.auto.value:auto-value-parcel:${autoValueParcel}",
+            autoValuesParcelAdapter: "com.ryanharter.auto.value:auto-value-parcel-adapter:${autoValueParcel}",
+            autoValueGson       : "com.ryanharter.auto.value:auto-value-gson:${autoValueGson}",
+
+            // greenrobot
+            butterknife            :"com.jakewharton:butterknife:${butterknife}",
+            butterknifeCompiler      :"com.jakewharton:butterknife-compiler:${butterknife}",
+            greendao                :"org.greenrobot:greendao:${greendao}",
+            eventbus                :"org.greenrobot:eventbus:${eventbus}",
+    ]
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标注对象创建 -->
+    <string name="label_marker">图标对象创建</string>
+    <string name="label_polyline">线对象创建</string>
+    <string name="label_polygon">面对象创建</string>
+    <!-- 地图相机操作 -->
+    <string name="label_map_listener">地图监听创建</string>
+    <string name="label_animated_camera">相机动画操作</string>
+    <string name="label_basic_camera">基本相机操作</string>
+    <string name="label_gesture_detector">手势探测操作</string>
+    <string name="label_latlng_bounds">相机自定义范围</string>
+    <string name="label_map_zoom">地图缩放操作</string>
+
+
+    <!-- 要素查询 -->
+    <string name="label_query_feature">点击查询要素</string>
+    <string name="label_query_point">查询点层要素</string>
+    <string name="label_query_rect">查询框内要素</string>
+    <string name="label_query_source">查询源内要素</string>
+    <!-- 地图碎片创建 -->
+    <string name="label_map_frament">视图碎片创建</string>
+    <!-- 信息窗口创建 -->
+    <string name="label_infowindow">信息窗口创建</string>
+    <!-- 地图路况创建 -->
+    <string name="label_traffic">地图路况创建</string>
+    <!-- 地图定位操作 -->
+    <string name="label_map_location">地图定位创建</string>
+    <!-- 地图截图操作 -->
+    <string name="label_snapshot">地图截图创建</string>
+    <!-- 样式样式操作 -->
+    <string name="label_default_style">地图样式创建</string>
+    <string name="label_circle_layer">圆圈图层创建</string>
+    <string name="label_layer_show_hide">图层显示和隐藏</string>
+    <string name="label_symbol_layer">符号图层创建</string>
+    <string name="label_line_gradient_layer">线渐变图层创建</string>
+    <string name="label_symbol_text_layer">符号图层文字创建</string>
+    <string name="label_symbol_layer_cluster">符号聚类图层创建</string>
+    <string name="label_symbol_switch_on_zoom">符号根据比例尺改变图层创建</string>
+    <string name="label_symbol_switch_change">符号图层元素更新</string>
+    <string name="label_heat_layer">热力图层创建</string>
+    <string name="label_line_layer">线图层创建</string>
+    <string name="label_line_zoom_layer">线变化图层创建</string>
+    <string name="label_data_driven_style">数据驱动样式操作</string>
+    <string name="label_geojson_source">GeoJson数据源创建</string>
+    <string name="label_image_source">ImageSource数据源创建</string>
+    <string name="label_geojson_cluster">GeoJson数据源聚类创建</string>
+    <!-- 地图纹理视图创建 -->
+    <string name="label_texture_view">纹理视图创建</string>
+    <!-- 地图UI设置 -->
+    <string name="label_uisetting">地图UI设置</string>
+
+    <!-- 地图进阶动画效果 -->
+    <string name="label_anim">图钉动画</string>
+    <string name="label_marker_anim">图标移动动画</string>
+    <string name="label_gif_anim">地图图层gif动画</string>
+    <string name="label_gif_marker">Marker添加gif动画</string>
+    <string name="label_trace_anim">轨迹回放动画</string>
+    <string name="label_trace_anim_expand">轨迹回放动画扩展</string>
+
+
+    <string name="label_power_grid">地图电网</string>
+    <string name="label_third_navi">调用第三方导航</string>
+    <string name="label_ukey">U盾模块</string>
+    <string name="label_geoconv">坐标转换</string>
+
+    <!-- 地图调试模式 -->
+    <string name="label_debug">崩溃调试</string>
+
+    <!--计算工具-->
+    <string name="label_coordconvert">坐标系转换</string>
+    <string name="label_cal_dis">两点间距离</string>
+    <string name="label_convertgeo2point">经纬度转屏幕像素</string>
+    <string name="label_convertpoint2geo">获取屏幕顶点经纬度</string>
+    <string name="label_road_correct">纠偏绑路</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_camera_setcenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_basic_camera_setcenter"
+            android:onClick="onSetMapCenter" />
+
+        <Button
+            android:id="@+id/btn_camera_setbearing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_basic_camera_setbearing"
+            android:onClick="onSetMapBearing" />
+
+        <Button
+            android:id="@+id/btn_camera_settilt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_basic_camera_settilt"
+            android:onClick="onSetMapTilt" />
+
+        <Button
+            android:id="@+id/btn_camera_listener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/mapsdk_basic_camera_listen"
+            android:onClick="onCameraListener" />
+
+    </LinearLayout>
+
+</RelativeLayout>

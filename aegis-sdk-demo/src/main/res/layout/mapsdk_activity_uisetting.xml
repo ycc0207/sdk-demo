@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mapsdk_recycle_tiltle_background"
+        android:alpha="0.8"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioGroup
+            android:id="@+id/rg_setfocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_set_left_top_focal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/mapsdk_btn_radio"
+                android:text="@string/mapsdk_uisetting_set_left_top_focal"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_set_center_focal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/mapsdk_btn_radio"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/mapsdk_uisetting_set_center_focal"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_cancel_user_focal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/mapsdk_btn_radio"
+                android:text="@string/mapsdk_uisetting_cancel_user_focal"
+                android:checked="true"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/create_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_goback"
+        android:layout_width="@dimen/title_icon_width"
+        android:layout_height="@dimen/title_icon_height"
+        android:layout_gravity="left"
+        android:layout_margin="15dp"
+        android:background="@drawable/title_item_bg"
+        android:src="@drawable/back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_style_streets"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyleStreets"
+            android:text="@string/mapsdk_default_style_streets"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_style_streets_raster512"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyleStreetsRaster512"
+            android:text="@string/mapsdk_default_style_streets_raster512"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_style_streets_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyleStreetsDark"
+            android:text="@string/mapsdk_default_style_streets_dark"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_style_satellite512"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyleSatellite512"
+            android:text="@string/mapsdk_default_style_satellite512"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_style_1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyle1"
+            android:text="@string/mapsdk_default_style_1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_style_2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyle2"
+            android:text="@string/mapsdk_default_style_2"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_style_3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyle3"
+            android:text="@string/mapsdk_default_style_3"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_style_4"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyle4"
+            android:text="@string/mapsdk_default_style_4"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_style_5"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyle5"
+            android:text="@string/mapsdk_default_style_5"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_style_6"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onStyle6"
+            android:text="@string/mapsdk_default_style_6"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</FrameLayout>

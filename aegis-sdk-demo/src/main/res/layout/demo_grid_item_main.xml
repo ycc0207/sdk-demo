@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp">
+
+    <com.epgis.mapsdk.annotations.BubbleLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:aegis_bl_arrowWidth="20dp"
+        app:aegis_bl_arrowHeight="100dp"
+        app:aegis_bl_bubbleColor="#CCCCCC"
+        app:aegis_bl_cornersRadius="20dp"
+        app:aegis_bl_arrowDirection="bottom"
+        app:aegis_bl_strokeColor="#ff00ff"
+        app:aegis_bl_strokeWidth="2dp"
+        app:aegis_bl_arrowPosition="120dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/aegis_compass_icon"/>
+
+    </com.epgis.mapsdk.annotations.BubbleLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清缓存" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="进入地图" />
+
+    </LinearLayout>
+
+</LinearLayout>

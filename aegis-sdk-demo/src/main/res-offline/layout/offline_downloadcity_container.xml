@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offline_downloadcity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3">
+
+    <RelativeLayout
+        android:id="@+id/rl_offline_downloadcity_top_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="36dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_offline_downloadcity_top_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#666666"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tip_downloading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="正在下载"
+                android:textColor="#333333"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/offline_downloadcity_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tip_downloaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="下载完成"
+                android:textColor="#333333"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/offline_download_complete_city_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_offline_downloadcity_bottom_view"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="44dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@drawable/offline_download_bottom_view_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/updateall"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="全部更新"-->
+    <!--android:textColor="#0091ff"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="0.5dip"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:background="#999999" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/downloadall"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="全部下载"-->
+    <!--android:textColor="#0091ff"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="0.5dip"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:background="#999999" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/pauseall"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="全部暂停"-->
+    <!--android:textColor="#0091ff"-->
+    <!--android:textSize="14dp" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

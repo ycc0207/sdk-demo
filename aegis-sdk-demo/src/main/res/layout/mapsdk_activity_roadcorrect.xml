@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<com.epgis.mapsdk.maps.MapView
+		android:id="@+id/mapView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/data_source_layout"
+		android:orientation="horizontal">
+
+
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/bt_jiupian"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="纠偏" />
+
+	<RadioGroup
+		android:id="@+id/rg_Orientation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/bt_jiupian">
+
+		<RadioButton
+			android:id="@+id/radio_data_1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="数据1"
+			android:checked="true"
+			/>
+
+		<RadioButton
+			android:id="@+id/radio_data_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="数据2"
+			/>
+
+	</RadioGroup>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical"
+		android:background="@drawable/bg_round_white">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="红色：没偏移的线"
+			android:textColor="@color/fromto_bus_realtime_des_text_color"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="绿色：纠偏成功的线"
+			android:textColor="#00FF00"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="蓝色：纠偏成功平滑的线"
+			android:textColor="#0000FF"/>
+
+	</LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.epgis.epgisapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- ukey module need start -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions"/>
+
+    <uses-permission
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+    <!-- ukey module need end -->
+
+    <application
+        android:name="com.epgis.AegisApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/aegis_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/aegis_icon"
+        android:sharedUserId="android.uid.system"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 应用标识 -->
+        <meta-data
+            android:name="com.epgis.android.APP_KEY"
+            android:value="bf2c0c0bb1fc325ba4bbd7db237de2e2" />
+
+        <!-- 应用秘钥 -->
+        <meta-data
+            android:name="com.epgis.android.APP_SECRET"
+            android:value="b966367b0b963b55aaea8723df7e1563" />
+
+        <!-- 应用主活动界面 -->
+        <activity
+            android:name="com.epgis.AegisActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 应用主页列表Activity  ******************************************************************* -->
+
+        <!-- 地图SDK主界面 -->
+        <!--<activity
+            android:name="com.epgis.mapsdk.activities.MapItemOverviewActivity"
+            android:description="@string/aegis_map_description"
+            android:label="@string/aegis_map_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="map" />
+        </activity>-->
+
+        <!-- 定位模块 location module start -->
+        <!--<activity
+            android:name="com.epgis.location.LocationActivity"
+            android:description="@string/aegis_loc_description"
+            android:label="@string/aegis_loc_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="position" />
+        </activity>-->
+        <!-- 定位模块 location module end -->
+
+
+        <!--@author fcy 2020-10-29  start -->
+        <!--地图创建 create module start -->
+        <activity
+            android:name="com.epgis.create.CreateActivity"
+            android:description="@string/aegis_create_description"
+            android:label="@string/aegis_create_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="position" />
+        </activity>
+        <!--地图创建 create module end -->
+
+        <!--初始化打点 initManage module start -->
+        <activity
+            android:name="com.epgis.initManage.InitManageActivity"
+            android:description="@string/aegis_initManage_description"
+            android:label="@string/aegis_initManage_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="initmanage" />
+        </activity>
+        <!--初始化打点 initManage module start -->
+
+        <!--初始化热力图 HeatMap module start -->
+        <activity
+            android:name="com.epgis.heatmap.HeatMapActivity"
+            android:description="@string/aegis_heatMap_description"
+            android:label="@string/aegis_heatMap_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="heatmap" />
+        </activity>
+        <!--初始化热力图 HeatMap module start -->
+
+        <!--动态打点 InitMarker module start -->
+        <activity
+            android:name="com.epgis.marker.InitMarkerActivity"
+            android:description="@string/aegis_initMarker_description"
+            android:label="@string/aegis_initMarker_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="initmanage" />
+        </activity>
+        <!--动态打点 InitMarker module start -->
+
+
+        <!-- 搜索开发 query module start -->
+        <activity
+            android:name="com.epgis.query.QueryActivity"
+            android:description="@string/aegis_query_description"
+            android:label="@string/aegis_query_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="search" />
+        </activity>
+        <!--poi搜索-->
+        <activity
+            android:name="com.epgis.query.KeywordQueryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.epgis.query.QueryResultActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.epgis.search.PoiDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.epgis.search.GeoconvActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--地理编码-->
+        <activity
+            android:name="com.epgis.query.GeographicActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--逆地理编码-->
+        <activity
+            android:name="com.epgis.query.resGeoLocationActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--经纬度获取行政数据-->
+        <activity
+            android:name="com.epgis.query.LocationActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--根据名称获取行政数据-->
+        <activity
+            android:name="com.epgis.query.LocationByCityActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 搜索开发 query module end -->
+        <!--@author fcy 2020-10-29  end -->
+
+        <!-- 导航模块 navisdk module start -->
+        <activity
+            android:name="com.epgis.navisdk.demo.RouteActivity"
+            android:description="@string/aegis_navi_description"
+            android:label="@string/aegis_navi_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="route" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.navisdk.demo.CustomNaviActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.epgis.navisdk.demo.RouteDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.epgis.navisdk.demo.BusResultActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.epgis.navisdk.demo.BusMapActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 导航模块 navisdk module end -->
+
+        <!-- 路线规划插件 routeplugin module end -->
+
+        <!-- 搜索模块 search module start -->
+        <!--<activity
+            android:name="com.epgis.search.SearchActivity"
+            android:description="@string/aegis_search_description"
+            android:label="@string/aegis_search_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="search" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.search.SearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.epgis.search.KeywordSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.epgis.search.PoiDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.epgis.search.GeoconvActivity"
+            android:screenOrientation="portrait"></activity>-->
+        <!-- 搜索模块 search module end -->
+
+        <!-- 离线模块 offline module start -->
+        <activity
+            android:name="com.epgis.offline.OfflineMapActivity"
+            android:description="@string/aegis_offline_description"
+            android:label="@string/aegis_offline_label"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="icon"
+                android:value="offline" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.offline.SimpleOfflineMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.epgis.CheckPermissionsActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.epgis.offline.service.DownloadService" />
+        <!-- 地图创建 offline module end -->
+
+        <!-- 地图创建 offline module start -->
+        <!-- 离线模块 offline module end -->
+        <!-- 电网模块 powergrid module end -->
+
+
+        <!-- 第三方导航模块 thirdnavi module end -->
+
+
+        <!-- U盾模块 ukey module end -->
+        <!-- ***************************************************************************************** -->
+
+        <!-- 地图SDK相关活动界面 -->
+        <activity
+            android:name="com.epgis.mapsdk.activities.annotations.MarkerActivity"
+            android:description="@string/description_marker"
+            android:label="@string/label_marker"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_annotations" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.annotations.PolylineActivity"
+            android:description="@string/description_polyline"
+            android:label="@string/label_polyline"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_annotations" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.annotations.PolygonActivity"
+            android:description="@string/description_polygon"
+            android:label="@string/label_polygon"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_annotations" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.map.MapListenerActivity"
+            android:description="@string/description_map_listener"
+            android:label="@string/label_map_listener"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_map" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.map.AnimatedCameraActivity"
+            android:description="@string/description_animated_camera"
+            android:label="@string/label_animated_camera"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_map" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.map.BasicCameraActivity"
+            android:description="@string/description_basic_camera"
+            android:label="@string/label_basic_camera">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_map" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.map.GestureDetectorActivity"
+            android:description="@string/description_gesture_detector"
+            android:label="@string/label_gesture_detector"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_map" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.map.LatLngBoundsActivity"
+            android:description="@string/description_latlng_bounds"
+            android:label="@string/label_latlng_bounds">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_map" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.map.MapZoomActivity"
+            android:description="@string/description_map_zoom"
+            android:label="@string/label_map_zoom"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_map" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.features.QueryFeatureActivity"
+            android:description="@string/description_query_feature"
+            android:label="@string/label_query_feature"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_features" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.features.QueryRenderedFeaturesPointActivity"
+            android:description="@string/description_query_point"
+            android:label="@string/label_query_point"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_features" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.infowindow.MarkerInfoWindowActivity"
+            android:description="@string/description_infowindow"
+            android:label="@string/label_infowindow"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_infowindow" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.traffic.MapTrafficActivity"
+            android:description="@string/description_traffic"
+            android:label="@string/label_traffic"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_traffic" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.snapshot.MapSnapshotActivity"
+            android:description="@string/description_snapshot"
+            android:label="@string/label_snapshot"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_snapshot" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.DefaultStyleActivity"
+            android:description="@string/description_default_style"
+            android:label="@string/label_default_style"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.ShowAndHideLayerActivity"
+            android:description="@string/description_show_and_hide_layer"
+            android:label="@string/label_layer_show_hide"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.CircleLayerActivity"
+            android:description="@string/description_circle_layer"
+            android:label="@string/label_circle_layer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.GeoJsonSourceActivity"
+            android:description="@string/description_geojson_source"
+            android:label="@string/label_geojson_source"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.ImageSourceActivity"
+            android:description="@string/description_image_source"
+            android:label="@string/label_image_source"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.SymbolLayerActivity"
+            android:description="@string/description_symbol_layer"
+            android:label="@string/label_symbol_layer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.SymbolTextLayerActivity"
+            android:description="@string/description_symbol_text_layer"
+            android:label="@string/label_symbol_text_layer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.SymbolLayerClusteringActivity"
+            android:description="@string/description_symbol_layer_cluster"
+            android:label="@string/label_symbol_layer_cluster"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.SymbolSwitchOnZoomActivity"
+            android:description="@string/description_symbol_switch_on_zoom"
+            android:label="@string/label_symbol_switch_on_zoom"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.SymbolLayerChangeActivity"
+            android:description="@string/description_symbol_change"
+            android:label="@string/label_symbol_switch_change"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.LineLayerActivity"
+            android:description="@string/description_line_layer"
+            android:label="@string/label_line_layer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.LineZoomLayerActivity"
+            android:description="@string/description_line_zoom_layer"
+            android:label="@string/label_line_zoom_layer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.LineGradientActivity"
+            android:description="@string/description_line_gradient_layer"
+            android:label="@string/label_line_gradient_layer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.style.HeatMapLayerActivity"
+            android:description="@string/description_heat_layer"
+            android:label="@string/label_heat_layer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_style" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.uisetting.UiSettingActivity"
+            android:description="@string/description_uisetting"
+            android:label="@string/label_uisetting"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_uisetting" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.anim.AnimatedIconActivity"
+            android:description="@string/description_icon_anim"
+            android:label="@string/label_anim"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_anim" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.anim.AnimatedMarkerActivity"
+            android:description="@string/description_marker_anim"
+            android:label="@string/label_marker_anim"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_anim" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.anim.AnimatedImageGifActivity"
+            android:description="@string/description_map_gif"
+            android:label="@string/label_gif_anim"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_anim" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.anim.AnimatedMarkerGifActivity"
+            android:description="@string/description_marker_gif"
+            android:label="@string/label_gif_marker"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_anim" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.anim.AnimatedTrackPlayActivity"
+            android:description="@string/description_trace_play_anim"
+            android:label="@string/label_trace_anim"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_anim" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.anim.AnimatedTrackPlayExpandActivity"
+            android:description="@string/description_trace_play_anim"
+            android:label="@string/label_trace_anim_expand"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_anim" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.debug.CrashActivity"
+            android:description="@string/description_icon_debug"
+            android:label="@string/label_debug"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_debug" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.tools.CoordConverActivity"
+            android:description="@string/description_coordconvert"
+            android:label="@string/label_coordconvert"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_tool" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.tools.CalculateDistanceActivity"
+            android:description="@string/description_cal_dis"
+            android:label="@string/label_cal_dis"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_tool" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+        android:name="com.epgis.mapsdk.activities.tools.GeoToScreenActivity"
+        android:description="@string/description_convertgeo2point"
+        android:label="@string/label_convertgeo2point"
+        android:screenOrientation="portrait">
+        <meta-data
+            android:name="@string/category"
+            android:value="@string/category_tool" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+    </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.tools.ScreenToGeoActivity"
+            android:description="@string/description_convertpoint2geo"
+            android:label="@string/label_convertpoint2geo"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_tool" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <activity
+            android:name="com.epgis.mapsdk.activities.tools.RoadCorrectActivity"
+            android:description="@string/description_road_correct"
+            android:label="@string/label_road_correct"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="@string/category"
+                android:value="@string/category_tool" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgis.mapsdk.activities.MapItemOverviewActivity" />
+        </activity>
+
+        <!--<activity android:name="com.epgis.ukey.ChooseLocActivity" />-->
+        <!--<activity android:name="com.epgis.ukey.base.BaseActivity" />-->
+    </application>
+</manifest>

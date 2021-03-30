@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff2f2f2">
+    <ImageView
+        android:id="@+id/iv_goback"
+        android:layout_width="@dimen/title_icon_width"
+        android:layout_height="@dimen/title_icon_height"
+        android:background="@drawable/title_item_bg"
+        android:layout_gravity="left"
+        android:layout_margin="15dp"
+        android:src="@drawable/back" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@id/iv_goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="离线下载："
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"/>
+    <ListView
+        android:id="@+id/offline_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:cacheColorHint="#00000000"
+        android:divider="#c0c0c0"
+        android:dividerHeight="0px" />
+</RelativeLayout>

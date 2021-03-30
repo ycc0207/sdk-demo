@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <usb-device
+        class="8"
+        product-id="0x4458"
+        protocol="80"
+        subclass="6"
+        vendor-id="0x3A59‬" />
+</resources>

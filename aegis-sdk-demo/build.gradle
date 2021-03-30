@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion rootProject.ext.targetSdkVersion
+
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res',
+                           'src/main/res-navisdk', 'src/main/res-loc',
+                           'src/main/res-offline', 'src/main/res-search',
+                           'src/main/res-location', 'src/main/res-thirdnavi',
+                           'src/main/res-traffic','src/main/res-powergrid',
+
+                           'src/main/res-routeplugin','src/main/res-geoconv']
+        }
+    }
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '28.0.0'
+                }
+            }
+        }
+    }
+    defaultConfig {
+        applicationId "com.epgis.epgisapp"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 100
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "GIT_SHA1", "\"" + getCurrentGitSha1() + "\""
+
+//        ndk {
+//            // 设置支持的SO库架构
+////            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+//            abiFilters 'armeabi-v7a' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+//        }
+    }
+
+    //签名
+    signingConfigs {
+        debug {
+            storeFile file('keys/debug/debug.keystore')
+        }
+        release {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('keys/release/release.keystore')
+            storePassword 'android'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 支持使用lambda
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    // aar包依赖配置路径
+    repositories {
+        flatDir {
+            dirs 'sdk'
+        }
+    }
+}
+
+dependencies {
+
+    // 应用依赖地图模块
+    // demo依赖离线模块
+    // data模块
+
+    //log模块
+
+    // demo依赖导航插件
+
+//    compile(name: 'aegis-sdk-map-release-20200520-V1.2.0', ext: 'aar')
+//    compile(name: 'aegis-sdk-navigation-release-20200520-V1.2.0', ext: 'aar')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'sdk', include: ['*.aar'])
+
+    implementation rootProject.ext.dep.supportAppcompatV7
+    implementation rootProject.ext.dep.supportConstraintLayout
+    implementation rootProject.ext.dep.supportRecyclerView
+    implementation rootProject.ext.dep.greendao
+    implementation rootProject.ext.dep.eventbus
+    implementation rootProject.ext.dep.okhttp3
+    implementation rootProject.ext.dep.okhttp3Logging
+    implementation rootProject.ext.dep.gson
+    implementation 'com.alibaba:fastjson:1.2.74'
+    implementation rootProject.ext.dep.butterknife
+    annotationProcessor rootProject.ext.dep.butterknifeCompiler
+
+    // 测试相关依赖
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: "com.android.support", module: "support-annotations"
+    })
+    androidTestImplementation('com.android.support.test:runner:1.0.2', {
+        exclude group: "com.android.support", module: "support-annotations"
+    })
+}
+apply from: 'sdk-build.gradle'

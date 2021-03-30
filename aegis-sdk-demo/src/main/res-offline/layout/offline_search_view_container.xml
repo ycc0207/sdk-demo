@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/search_container"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="1dp"
+             android:padding="8dp"
+             android:focusable="true"
+             android:layout_marginRight="12dp"
+             android:layout_marginLeft="12dp"
+             android:focusableInTouchMode="true"
+             android:background="#efefef"
+             android:visibility="visible">
+
+    <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="43.5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/offline_search_edit"
+            android:hint="请输入城市名称或首字母"
+            android:maxLength="100"
+            android:singleLine="true"
+            android:textSize="16dp"/>
+
+    <ImageView
+            android:id="@+id/search_magnifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:background="@drawable/offline_search_light"
+            android:focusable="false"/>
+
+    <ImageView
+            android:id="@+id/search_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/offline_search_clear"
+            android:visibility="gone"/>
+
+</RelativeLayout>

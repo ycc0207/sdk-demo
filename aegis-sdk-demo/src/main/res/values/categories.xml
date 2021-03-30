@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">category</string>
+    <string name="category_annotations">地图标注相关</string>
+    <string name="category_power_grid">地图电网图层</string>
+    <string name="category_map">地图相机监听</string>
+    <string name="category_features">地图要素查询</string>
+    <string name="category_fragment">视图碎片相关</string>
+    <string name="category_infowindow">地图信息窗口</string>
+    <string name="category_traffic">地图实时路况</string>
+    <string name="category_location">地图定位相关</string>
+    <string name="category_snapshot">地图截图相关</string>
+    <string name="category_style">地图样式相关</string>
+    <string name="category_textureview">纹理视图相关</string>
+    <string name="category_uisetting">地图UI设置相关</string>
+    <string name="category_anim">地图进阶动画</string>
+    <string name="category_debug">地图调试相关</string>
+    <string name="category_tool">地图计算工具</string>
+</resources>

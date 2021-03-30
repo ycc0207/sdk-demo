@@ -1,0 +1,108 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AegisTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <style name="defaultTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+
+    <!-- used to set the minTextSize via xml -->
+    <attr name="autoScaleTextViewStyle" format="reference" />
+    <declare-styleable name="AutoScaleTextView">
+        <attr name="minTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- 对话框样式 -->
+    <style name="Theme.Light.Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <!-- 弹出框动画 由下至上 -->
+    <style name="dialogStyle" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_bottom</item>
+        <!-- 进入时的动画 -->
+        <item name="android:windowExitAnimation">@anim/popup_exit_bottom</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <style name="BaseDialog" parent="android:Theme.Light">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="Dialog_Msg" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Base_AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <!--不设置在6.0以上会出现，宽度不充满屏幕的情况-->
+        <item name="windowMinWidthMinor">90%</item>
+        <!-- 取消标题栏，如果在代码中settitle的话会无效 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:topDark">@color/white</item>
+        <item name="colorAccent">#3F51B5</item>
+    </style>
+    <string-array name="sp_app">
+        <item>0. 连接设备</item>
+        <item>1. 断开连接</item>
+        <item>2. 校验PIN</item>
+        <item>3. 修改PIN</item>
+        <item>4. 校验设备</item>
+        <item>5. 数据加密</item>
+        <item>6. 数据解密</item>
+        <item>7. 创建文件</item>
+        <item>8. 读取文件</item>
+        <item>9. 写入文件</item>
+        <item>10. 删除文件</item>
+        <item>11. 枚举文件</item>
+        <item>12. 获取U区空间信息</item>
+        <item>13. 获取加密区空间信息</item>
+        <item>14. 获取U盘根目录</item>
+        <item>15. 挂载文件存储</item>
+        <item>15. 卸载文件存储</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "symbol": "sunny",
+            "text":"晴天"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               118.1810890000,
+               24.4900400000
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+             "symbol": "cloudy",
+             "text":"多云"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+                118.18914169400398,
+                24.470721384411273
+            ]
+         }
+      }
+   ]
+}

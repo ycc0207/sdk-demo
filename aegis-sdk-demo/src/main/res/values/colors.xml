@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#AA000000</color>
+    <color name="colorGray">#888888</color>
+    <!-- 地图SDK -->
+    <color name="colorBlue">#0091ff</color>
+    <!-- 离线模块 -->
+    <color name="colorLightGray">#DDDDDD</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="bg_white">#F8F8F8</color>
+    <color name="commom_background">#f3f3f3</color>
+
+    <color name="flutter_10">#cc8694A5</color>
+    <color name="flutter_20">#cc4A90E2</color>
+    <color name="flutter_30">#ccFFAB65</color>
+
+    <color name="font_cb">#0091ff</color>
+    <!-- 文字-蓝色高亮不可用的颜色 -->
+    <!-- 文字-高亮文字（蓝色）的点击态的颜色-->
+    <!-- 文字-按钮颜色，按钮点击变深 -->
+    <!-- 文字-按钮颜色，按钮不可点击 -->
+    <!-- 文字-标题文字（纯黑色） -->
+    <color name="font_c00">#000000</color>
+    <!-- 文字-热词文字（橘黄色） -->
+    <!-- 文字-描述文字（淡黑色） -->
+    <color name="font_c33">#333333</color>
+    <!-- 文字-价格文字（红色） -->
+    <!-- 文字-辅助文字（灰黑色） -->
+    <color name="font_c66">#666666</color>
+    <!--搜索结果推荐词（红色）-->
+    <!-- 文字-标签文字（绿色） -->
+    <!-- 文字-附属文字（暗灰色） -->
+    <color name="font_c99">#999999</color>
+    <!-- 10%透明度 -->
+    <color name="font_white_per10">#19ffffff</color>
+    <!-- 30%透明度 -->
+    <color name="font_white_per30">#4cffffff</color>
+    <!-- 40%透明度 -->
+    <color name="font_white_per40">#66ffffff</color>
+    <!-- 55%透明度 -->
+    <color name="font_white_per55">#8cffffff</color>
+    <!-- 60%透明度 -->
+    <color name="font_white_per60">#99ffffff</color>
+    <!-- 文字-有色按钮文字（白色） -->
+    <color name="font_cff">#ffffff</color>
+    <!-- 文字-不可用文字（灰色） -->
+    <!-- 文字-不可点击-蓝按钮上的文字颜色 -->
+    <!-- 文字-不可点击-红按钮上的文字颜色-->
+    <!-- 文字-不可点击-灰色按钮上的文字颜色 -->
+    <!-- 文字-不可点击-白按钮上的文字颜色（蓝色） -->
+    <!-- 文字-不可点击-白按钮上的文字颜色（红色） -->
+    <!-- 背景-全局背景 -->
+    <!-- 背景-导航条 -->
+    <!-- 背景-列表、输入框-->
+    <color name="bg_c">#ffffff</color>
+    <!-- 背景-附属信息框背景 -->
+    <!-- 背景-点击 -->
+    <!-- 背景-选中 -->
+    <!-- 边框，边线-导航条边线 -->
+    <!-- 边框，边线-卡片边线 -->
+    <!-- 边框，边线-输入框、按钮边线 -->
+    <!-- 边框，边线-列表分割线 -->
+    <!-- 边框，边线-附属信息框边框-->
+
+    <!-- 一种分割线的颜色 -->
+    <!-- 边框，边线-列表分割线 -->
+    <!-- 一种背景色 -->
+    <color name="bg_b8">#b8b8b8</color>
+    <!-- 一种分割线的颜色 -->
+    <color name="bg_ea">#eaeaea</color>
+    <!-- 一种背景色 -->
+    <color name="bg_f5">#f5f5f5</color>
+    <!-- 一种背景色，用于bg_f5的夜间模式 -->
+    <color name="bg_f5_night">#344047</color>
+    <!-- 一种背景色 -->
+    <!-- 一种背景色 -->
+    <!-- 一种背景色，用于bg_f8的夜间模式 -->
+    <!-- 设置背景色 -->
+
+    <drawable name="bg_f5">#f5f5f5</drawable>
+
+    <!-- v3 -->
+    <color name="transparent_background">#80000000</color>
+
+    <drawable name="mbox_btns_layout_divider">#e6e6e6</drawable>
+    <color name="car_tab_text_blue">#4c90f9</color>
+
+    <!-- new -->
+    <color name="gray">#FF888888</color>
+
+    <!-- 普通标题 -->
+    <!-- 普通标题反白 -->
+    <color name="font_normal_title_text_white_color">#FFFFFF</color>
+    <!-- 小号备注文字 -->
+    <!-- 灰 -->
+    <color name="solid_white">#ffffffff</color>
+    <color name="v3_font_color_6">#666666</color>
+    <!-- diandao -->
+
+    <!-- v4 -->
+    <color name="title">#000000</color>
+    <!-- 二级标题 -->
+    <color name="black_title">#333333</color>
+    <!-- 大标题 -->
+    <!-- 搜索结果详细列表的小字 -->
+    <!-- 黑色背景标题 -->
+
+    <!-- 一框搜 结果列表文字 -->
+
+    <!-- 切换城市深色title背景 的字体颜色 -->
+    <!-- 背景色 -->
+    <!-- 分隔线 -->
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="divider_color">#c5c5c5</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- 切换城市离线地图 -->
+
+    <!-- v322 -->
+    <!-- Jolene UI 颜色归总 -->
+    <color name="black">#494949</color>
+    <!-- 大标题黑 输入框用户文字 -->
+    <!-- 列表大字 深灰 -->
+    <color name="title_black">#494949</color>
+    <!-- 二级标题 路线tip文字 -->
+    <!-- 公交 时间 -->
+    <!-- 列表页btn文字色 -->
+    <!-- 公交 时间 -->
+    <color name="gary">#898989</color>
+    <!-- 输入框默认文字 列表小字 黑色背景中显暗的 筛选灰字 btn高亮文字色 -->
+    <!-- ID界面的灰色文字色 -->
+    <color name="gray_lite">#c5c5c5</color>
+    <!-- 分隔线   抽屉文字 导航街道名 -->
+    <!-- 功能不可用disable文字 -->
+    <color name="gray_white">#e8e8e8</color>
+    <!-- 亮灰 导航底部文字 -->
+
+    <color name="gary_tab">#f5f5f5</color>
+    <!-- 灰 筛选btn背景色 -->
+    <color name="gary_frame">#eff1f3</color>
+    <!-- 浅灰 背景色 -->
+    <color name="white">#ffffff</color>
+    <!-- 全白 表格颜色 -->
+    <!-- 高亮色 -->
+
+    <color name="blue">#4c90f9</color>
+    <!-- 蓝色 -->
+    <!-- 红 -->
+
+    <!-- 路线规划里数字红 光柱红 -->
+
+    <!-- 光柱灰 -->
+
+    <!-- 搜索历史列表 -->
+
+    <!-- POI优惠描述文字 -->
+
+    <color name="v4_font_color_lite_black">#666666</color>
+
+    <!-- share交通互助底部 -->
+
+    <!-- 交通信息 -->
+
+    <!-- 团购适用门店电话旁边的分割线 -->
+
+    <!-- 左抽屉Tab背景色 -->
+
+    <!-- 淘宝字体颜色 -->
+
+    <!-- 下载语音包dialog -->
+
+    <color name="v6_navi_set_divider_line">#d7d7d7</color>
+
+    <!-- 发现 -->
+
+    <!--
+   <color name="umeng_socialize_text_title">#464f61</color>
+   <color name="umeng_socialize_text_time">#999999</color>
+   <color name="umeng_socialize_divider">#E6E6E6</color>
+
+    -->
+
+
+    <!-- 电影相关 -->
+    <!-- tapTextVie_Color -->
+    <!-- starTextView_Color -->
+
+    <!-- 魔盒计划 -->
+
+    <!-- 酒店相关 -->
+
+    <!-- 团购主页 -->
+
+    <!-- 卡券相关 -->
+    <!-- 支付宝 -->
+
+    <!-- 优惠劵 -->
+    <color name="gray_bg">#efefef</color>
+    <!-- 我的页面 -->
+
+    <!-- 进度条背景色 -->
+
+    <!-- 不仅页面：全部、热词的颜色及被选中颜色 -->
+
+    <!-- 出行中淡蓝色半透明背景 -->
+    <!-- 报错 -->
+    <color name="error_hint_color">#999999</color>
+
+    <!-- 外卖地址 -->
+    <color name="blue_white">#b8caeb</color>
+
+    <!-- 公交搜索方案页颜色值 -->
+    <color name="fromto_bus_main_text_color">#333333</color>
+    <color name="fromto_bus_sub_text_color">#666666</color>
+    <color name="fromto_bus_detail_sub_text_color">#999999</color>
+    <color name="fromto_bus_result_item_text">#cccccc</color>
+    <color name="fromto_bus_result_item_sub_text">#999999</color>
+    <color name="fromto_bus_detail_left_bg_color">#e2f3ff</color>
+    <color name="fromto_bus_detail_right_bg_color">#f5f9fc</color>
+    <color name="fromto_bus_realtime_des_text_color">#ff4546</color>
+</resources>

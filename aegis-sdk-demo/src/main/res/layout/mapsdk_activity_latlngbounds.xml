@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.epgis.mapsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_camera_bounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/ll_fit_bounds"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:background="@drawable/mapsdk_btn_background"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_camera_bounds_for_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/mapsdk_btn_check"
+            android:text="@string/mapsdk_bounds_for_target"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fit_bounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_latlng_bounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/mapsdk_latlng_bounds"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onNewLatLngBounds" />
+
+        <Button
+            android:id="@+id/btn_new_camera_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mapsdk_camera_position_bounds"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/mapsdk_btn_background"
+            android:onClick="onNewCameraPosition" />
+
+    </LinearLayout>
+
+</RelativeLayout>

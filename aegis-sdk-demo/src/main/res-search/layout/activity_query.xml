@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBlue"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="功能示例列表"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/keySearchBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POI搜素/关键字搜索"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/resgeoBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="逆地理编码"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/geoBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地理编码"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/searchByLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="经纬度获取行政区"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/searchByKeyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取行政区数据"
+        android:layout_marginTop="10dp"/>
+
+    <!--<Button
+        android:id="@+id/searchByLocation4Town"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取4级行政区数据(山西：a{veFw|mmT)"
+        android:layout_marginTop="10dp"/>-->
+
+    <Button
+        android:id="@+id/geoconvService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="坐标系转换"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/zbxzhService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="两点间距离"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
